@@ -1,0 +1,44 @@
+<ion-card class="aracne-card">
+  <ion-card-content>
+    <!-- Imagenes -->
+    <div class="container-flex ion-margin-bottom">
+      <!-- IMAGEN A  -->
+      <ng-container *ngIf="localData.FotoIncidenciaA; else NotImage">
+        <div class="card-container-image">
+          <img alt="Notification Image" [src]="localData.FotoIncidenciaA">
+        </div>
+      </ng-container>
+
+      <!-- IMAGEN B -->
+      <ng-container *ngIf="localData.FotoIncidenciaB; else NotImage">
+        <div class="card-container-image">
+          <img alt="Notification Image" [src]="localData.FotoIncidenciaB">
+        </div>
+      </ng-container>
+
+      <!-- REPLACE NOT IMAGE -->
+      <ng-template #NotImage>
+        <div class="card-container-image container-not-image">
+          <ion-icon class="icon-not-image" name="images-outline"></ion-icon>
+        </div>
+      </ng-template>
+    </div>
+
+    <!-- Informacion -->
+    <ion-text class="ion-margin-top">
+      <p class="row-information"><mat-icon class="icon">library_books</mat-icon> {{localData.TipoIncidencia}}</p>
+      <p class="row-information"><mat-icon class="icon"> message</mat-icon> {{localData.EstadoIncidencia}}</p>
+      <p class="row-information"><mat-icon class="icon">event</mat-icon> {{localData.FeCreacion}}</p>
+      <p class="row-information"><mat-icon class="icon">view_module</mat-icon> {{localData.idProducto}}</p>
+    </ion-text>
+
+    <div class="ion-margin-top">
+      <ion-label><b>Observaciones</b></ion-label>
+      <p>{{localData.Observaciones}}</p>
+    </div>
+
+    <div *ngIf="activeDelete" class="container-flex ion-justify-content-end ion-margin-top">
+      <ion-button size="small" fill="clear" color=" btn-aracne btn-aracne-warning btn-small" (click)="confirmDeleteAlert()">ELIMINAR</ion-button>
+    </div>
+  </ion-card-content>
+</ion-card>

@@ -1,0 +1,181 @@
+:host::ng-deep ion-slide {
+    border: 1px #f4f4f4 solid;
+    border-radius: 5px;
+    padding-top: 1rem !important; 
+    padding-bottom: 1rem !important;
+} 
+
+:host::ng-deep ion-calendar {
+    padding: unset !important;
+    width: 22.5rem !important;
+    & .title {
+        display: none;
+    }
+    & .arrow-dropdown {
+        display: none !important;
+    }
+    & ion-calendar-week {
+        display: inline-block;
+        color: #676868 !important;
+        font-weight: 200;
+        width: calc(100% - 15px);
+    }
+    & ion-calendar-month {
+        display: inline-block;
+        width: calc(100% - 15px);
+    }
+    & .week-title {
+        display: grid;
+        grid-template-columns: repeat(7, auto);
+        padding-bottom: unset !important;
+        font-size: 0.75em !important;
+        align-items: center;
+        & li {
+            width: unset !important;
+        }
+    }
+    & .days-box {
+        display: grid;
+        grid-template-columns: repeat(7, auto);
+        padding: unset !important;
+        justify-content: center;
+    }
+    & .days {
+        margin: 0.3rem;
+        min-width: 38px !important;
+        height: 58px !important;
+        border-radius: 7px;
+        background-color: #c5e6eb;
+        & .last-month-day,
+        & .next-month-day {
+            background-color: #f4f4f4 !important;
+            pointer-events: none;
+            & p {
+                color: #d7d7d7 !important;
+            }
+        }
+    }
+    & button.days-btn {
+        height: 100% !important;
+        width: 100% !important;
+        border-radius: 5px !important;
+        & .today > p {
+            font-weight: 500 !important;
+        }
+        & p {
+            position: absolute;
+            top: 0.8rem;
+            font-size: 1em !important;
+            text-align: start !important;
+            padding-left: 0.3rem !important;
+        }
+    }
+    & button.days-btn:not(:disabled) > p {
+        color: #06192b !important;
+    }
+    & button.days-btn.on-selected {
+        background-color: unset !important;
+        border: #87dfec 2px solid !important;
+    }
+}
+ion-fab-button {
+    --background: none !important;
+    --background-activated: none !important;
+    --box-shadow: unset !important;
+}
+
+:host::ng-deep .work_not_done::after {
+    content: "";
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    margin-left: 0.25rem;
+    top: 0.2rem;
+    background-color: #ffffff;
+    border: 1px #bfbfbf solid;
+}
+
+:host::ng-deep .work_done::after {
+    content: "";
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    margin-left: 0.25rem;
+    top: 0.2rem;
+    background-color: #bfbfbf;
+    border: 1px #bfbfbf solid;
+}
+
+:host::ng-deep .work_not_done_legend::before {
+    content: "";
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    margin-right: 0.25rem;
+    top: 0.2rem;
+    background-color: #ffffff;
+    border: 1px #bfbfbf solid;
+}
+
+:host::ng-deep .work_done_legend::before {
+    content: "";
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    margin-right: 0.25rem;
+    top: 0.2rem;
+    background-color: #bfbfbf;
+    border: 1px #bfbfbf solid;
+}
+
+:host::ng-deep .list-salespoint {
+    & ion-item:not(:first-child) {
+        margin-top: 1.25rem;
+    }
+    & ion-item::part(native) {
+        padding-inline-start: unset !important;
+    }
+    // & ion-item:last-child {
+    //     --border-color: transparent !important;
+    // }
+}
+
+.day-month-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 3rem;
+    padding-inline-end: calc(var(--ion-safe-area-left, 0) + 16px);
+    background: rgba(238, 241, 244, 1);
+    box-shadow: 5px 5px 5px #d9d9d9;
+}
+
+:host::ng-deep ion-content {
+    #calendarMap {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 150ms ease-in;
+        display: block;
+        &.show-map {
+            opacity: 1;
+        }
+    }
+}
+:host::ng-deep ion-content {
+    #divCalendarMap {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 150ms ease-in;
+        display: block;
+
+        &.show-map {
+            opacity: 1;
+        }
+    }
+}

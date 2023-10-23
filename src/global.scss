@@ -1,0 +1,218 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import "~@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+@import "theme/screen.scss";
+@import "theme/colors.scss";
+@import "theme/aracne-buttons.scss";
+@import "theme/aracne-menu.scss";
+@import "theme/aracne-picture.scss";
+@import "theme/aracne-input.scss";
+@import "theme/aracne-containers.scss";
+@import "theme/aracne-list.scss";
+@import "theme/aracne-tabs.scss";
+@import "theme/aracne-card.scss";
+@import "theme/aracne-fonts.scss";
+
+@font-face {
+    font-family: "Lato";
+    src: url("./assets/fonts/Lato-Regular.ttf");
+}
+@font-face {
+    font-family: "Lato-Bold";
+    src: url("./assets/fonts/Lato-Bold.ttf");
+}
+@font-face {
+    font-family: "Lato-Light";
+    src: url("./assets/fonts/Lato-Light.ttf");
+}
+
+:root {
+    /** ARACNE **/
+    --aracne-green-primary: #8fc886;
+    --aracne-red-primary: #d05f5f;
+    --aracne-purple-primary: #844f92;
+    --aracne-wine-primary: #693b70;
+    --aracne-dark-primary: #06192b;
+    --aracne-gray-primary: #c8c8c8;
+    --aracne-light-gray: #dcdcdc;
+    --aracne-light: #f4f4f4;
+    --aracne-bg-gray: #f2f2f2;
+
+    --aracne-danger: #eb445a;
+    --aracne-warning: #ffc409;
+
+    --aracne-footer-text: #b1b1b1;
+
+    /** FONTS **/
+    --font-primary: "Lato";
+    --font-primary-bold: "Lato-Bold";
+    --font-primary-light: "Lato-Light";
+
+    /** FONT-SIZE **/
+
+    --font-big: 16px;
+    --font-medium: 13px;
+    --font-small: 10px;
+}
+
+// texts
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span:not(.alert-button-inner),
+small:not(.text-success):not(.text-white),
+ion-title,
+ion-label:not(.text-success):not(.text-white),
+ion-input input,
+ion-text,
+ion-button {
+    font-family: Lato !important;
+    color: #06192b;
+}
+
+// colors
+.purple {
+    color: #844f92 !important;
+}
+.white {
+    color: #ffffff !important;
+}
+
+// toolbars buttons
+.height-header {
+    height: 52px;
+}
+
+// ionic components
+ion-datetime {
+    --ion-color-base: #844f92 !important;
+    margin-top: -0.7rem;
+}
+
+[aria-checked="true"].sc-ion-alert-md .alert-radio-icon.sc-ion-alert-md {
+    border-color: #844f92 !important;
+}
+
+[aria-checked="true"].sc-ion-alert-md .alert-radio-inner.sc-ion-alert-md {
+    background-color: #844f92 !important;
+}
+
+[aria-checked="false"].sc-ion-alert-md .alert-radio-inner.sc-ion-alert-md {
+    background-color: #737373 !important;
+}
+
+[aria-checked="true"].sc-ion-alert-md .alert-checkbox-icon.sc-ion-alert-md {
+    border-color: #844f92 !important;
+    background-color: #844f92 !important;
+}
+
+.alert-button.sc-ion-alert-md:not(.alert-button-role-cancel) > span {
+    font-weight: bold !important;
+    color: #844f92 !important;
+}
+
+cdk-virtual-scroll-viewport {
+    width: 100% !important;
+}
+
+// buttons de alerts
+button.alert-button.alert-button-role-confirm.ion-activatable.ion-focusable.sc-ion-alert-ios:not(.alert_button_aracne)
+    > span {
+    color: #844f92 !important;
+}
+button.alert-button.alert-button-role-cancel.ion-activatable.ion-focusable.sc-ion-alert-ios:not(.alert_button_aracne)
+    > span {
+    color: #06192b !important;
+}
+
+// refreshing
+ion-refresher.refresher-native ion-spinner,
+ion-refresher.refresher-native .arrow-container ion-icon {
+    color: #844f92 !important;
+}
+
+// alerts personalizados
+.alert-wrapper {
+    padding: 1rem;
+    min-width: 18.75rem !important;
+}
+.alert_button_aracne {
+    border: 1px #06192b solid !important;
+    border-radius: 1rem !important;
+    background: #06192b !important;
+    max-height: 2rem !important;
+    font-size: 0.9rem !important;
+    padding-top: 0.25rem !important;
+    & span {
+        color: #ffffff !important;
+    }
+}
+
+@mixin animate($animation, $duration, $method, $times) {
+    animation: $animation $duration $method $times;
+}
+@mixin keyframes($name) {
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+#loader-sync {
+    @include keyframes(loading-spinner) {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    @include animate(loading-spinner, 1s, linear, infinite);
+}
+
+// ion-list-header {
+//     padding-inline-start: unset !important;
+// }
+// ion-item {
+//     --inner-padding-end: unset !important;
+// }
+// ion-item::part(native) {
+//     & item-inner {
+//         padding-inline-end: unset !important;
+//     }
+// }
+.alert-tappable.alert-radio {
+    height: auto;
+    contain: content;
+}
+
+.alert-radio-label.sc-ion-alert-md,
+.alert-radio-label.sc-ion-alert-ios {
+    white-space: normal;
+}

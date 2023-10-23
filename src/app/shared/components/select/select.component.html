@@ -1,0 +1,8 @@
+<ion-item  class="ion-margin-bottom" lines="none">
+  <ion-label class="aracne-label" position="stacked">{{label}}</ion-label>
+  <ion-select class="aracne-input-clasic"  [multiple]="multiple" interface="alert" (ionChange)="eventSelectItem($event)" mode="ios" [value]="_valueSelected" [placeholder]="'--Seleccione--'">
+    <ion-select-option *ngFor="let item of data" [value]="item.id">{{item.value}}</ion-select-option>
+  </ion-select>
+</ion-item>
+
+

@@ -1,0 +1,32 @@
+// Color de texto
+.text-white {
+    color: white !important;
+}
+.text-success {
+    color: var(--aracne-green-primary)
+}
+.text-danger {
+    color: var(--aracne-danger)
+}
+
+.text-dark {
+    color: var(--aracne-dark-primary);
+}
+
+.text-violet {
+    color: var(--aracne-purple-primary);
+}
+
+
+//Color de fondo
+.bg-white {
+    background-color: white;
+}
+
+.bg-purple {
+    background-color: var(--aracne-purple-primary);
+}
+
+.bg-dark-purple {
+    background-color: var(--aracne-wine-primary);
+}

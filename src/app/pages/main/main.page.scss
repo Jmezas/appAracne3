@@ -1,0 +1,13 @@
+.list-campaign ion-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.list-campaign ion-item {
+    display: inline;
+    border-bottom: 1px #c8c8c8 solid;
+    width: 100%;
+    text-align: center;
+}

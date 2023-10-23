@@ -1,0 +1,298 @@
+[
+    {
+        "Id": 1231,
+        "IdCampaña": 81,
+        "IdRol": 1,
+        "IdModulo": 1,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1232,
+        "IdCampaña": 81,
+        "IdRol": 1,
+        "IdModulo": 2,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1233,
+        "IdCampaña": 81,
+        "IdRol": 1,
+        "IdModulo": 3,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1234,
+        "IdCampaña": 81,
+        "IdRol": 1,
+        "IdModulo": 4,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1235,
+        "IdCampaña": 81,
+        "IdRol": 1,
+        "IdModulo": 5,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1236,
+        "IdCampaña": 81,
+        "IdRol": 1,
+        "IdModulo": 6,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1237,
+        "IdCampaña": 81,
+        "IdRol": 1,
+        "IdModulo": 7,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1238,
+        "IdCampaña": 81,
+        "IdRol": 1,
+        "IdModulo": 8,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1239,
+        "IdCampaña": 81,
+        "IdRol": 1,
+        "IdModulo": 9,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1240,
+        "IdCampaña": 81,
+        "IdRol": 1,
+        "IdModulo": 10,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1241,
+        "IdCampaña": 81,
+        "IdRol": 1,
+        "IdModulo": 11,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1242,
+        "IdCampaña": 81,
+        "IdRol": 1,
+        "IdModulo": 12,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1243,
+        "IdCampaña": 81,
+        "IdRol": 1,
+        "IdModulo": 13,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1244,
+        "IdCampaña": 81,
+        "IdRol": 1,
+        "IdModulo": 14,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1245,
+        "IdCampaña": 81,
+        "IdRol": 1,
+        "IdModulo": 15,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1246,
+        "IdCampaña": 81,
+        "IdRol": 1,
+        "IdModulo": 16,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1247,
+        "IdCampaña": 81,
+        "IdRol": 1,
+        "IdModulo": 17,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 4163,
+        "IdCampaña": 81,
+        "IdRol": 2,
+        "IdModulo": 20,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 4164,
+        "IdCampaña": 81,
+        "IdRol": 2,
+        "IdModulo": 1,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 4165,
+        "IdCampaña": 81,
+        "IdRol": 2,
+        "IdModulo": 4,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 4166,
+        "IdCampaña": 81,
+        "IdRol": 2,
+        "IdModulo": 5,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 4167,
+        "IdCampaña": 81,
+        "IdRol": 2,
+        "IdModulo": 14,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1906,
+        "IdCampaña": 169,
+        "IdRol": 1,
+        "IdModulo": 1,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1907,
+        "IdCampaña": 169,
+        "IdRol": 1,
+        "IdModulo": 2,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1908,
+        "IdCampaña": 169,
+        "IdRol": 1,
+        "IdModulo": 3,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1909,
+        "IdCampaña": 169,
+        "IdRol": 1,
+        "IdModulo": 4,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1910,
+        "IdCampaña": 169,
+        "IdRol": 1,
+        "IdModulo": 5,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1911,
+        "IdCampaña": 169,
+        "IdRol": 1,
+        "IdModulo": 6,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1912,
+        "IdCampaña": 169,
+        "IdRol": 1,
+        "IdModulo": 13,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1913,
+        "IdCampaña": 169,
+        "IdRol": 1,
+        "IdModulo": 14,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1914,
+        "IdCampaña": 169,
+        "IdRol": 1,
+        "IdModulo": 7,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1915,
+        "IdCampaña": 169,
+        "IdRol": 1,
+        "IdModulo": 8,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1916,
+        "IdCampaña": 169,
+        "IdRol": 1,
+        "IdModulo": 9,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1917,
+        "IdCampaña": 169,
+        "IdRol": 1,
+        "IdModulo": 10,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1918,
+        "IdCampaña": 169,
+        "IdRol": 1,
+        "IdModulo": 11,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 1919,
+        "IdCampaña": 169,
+        "IdRol": 1,
+        "IdModulo": 12,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    },
+    {
+        "Id": 2022,
+        "IdCampaña": 169,
+        "IdRol": 1,
+        "IdModulo": 20,
+        "AsignarJornadasReporte": true,
+        "AccesoGaleria": true
+    }
+]

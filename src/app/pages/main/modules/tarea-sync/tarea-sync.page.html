@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-title>tareaSync</ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <ion-refresher slot="fixed" (ionRefresh)="refreshDataPending($event)">
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+    <ion-text style="text-align: center; margin: 0 !important;">
+      <h3 style="font-weight: bold;">Sincronizar registros pendientes</h3>
+      <h6 *ngIf="!isLoading && dataPendingSync.length == 0">No hay registros por sincronizar</h6>
+    </ion-text>
+    <ion-list *ngIf="!isLoading">
+      <ng-template ngFor let-item [ngForOf]="dataPendingSync" let-indexParent="index">
+        <ion-list-header style="font-size: 1.25rem; display: flex; flex-direction: column;"
+        [ngStyle]="{'margin' : indexParent === 0 ? '2rem 0 1rem 0' : '1rem 0'}">
+          <ion-label>{{ item.registerDateFormat }}</ion-label>
+          <ion-label>{{ item.salespointName }}</ion-label>
+        </ion-list-header>
+
+        <ng-template ngFor let-child [ngForOf]="item.dataPending" let-indexChild="index">
+          <ion-item style="display: flex; flex-direction: row; align-items: center; justify-content: space-between;"
+            [disabled]="child.isLoading">
+            <div style="display: flex; flex-direction: row; align-items: center; width: 100%;">
+              <img [attr.src]="child.icon" style="max-width: 2rem;">
+              <ion-label style="margin-left: 0.5rem;">{{ child.formName }}</ion-label>
+            </div>
+            <img [attr.src]="syncIcon" [attr.id]="child.isLoading ? 'loader-sync' : ''" style="max-width: 2rem;"
+              (click)="onSyncWorkPending(indexParent, indexChild)" *ngIf="child.isEnabled && !child.isSync">
+            <img [attr.src]="syncSuccessIcon" style="max-width: 2rem;" *ngIf="child.isEnabled && child.isSync">
+          </ion-item>
+        </ng-template>
+      </ng-template>
+    </ion-list>
+  </div>
+</ion-content>

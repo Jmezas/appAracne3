@@ -1,0 +1,14 @@
+.card-reporte-ventas {
+    .input-aligment {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;;
+        ion-input {
+            width: 50%;
+            text-align: right;
+        }
+    }
+    ion-label {
+        font-size: var(--font-medium);
+    }
+}

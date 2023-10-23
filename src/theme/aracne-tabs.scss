@@ -1,0 +1,19 @@
+.aracne-tabs{
+    ion-tab-bar {
+        // flex-direction: column;
+        align-items: stretch;display: flex;
+        justify-content: flex-start;
+    }
+    .tab-selected {
+        border-bottom: solid var(--aracne-warning);
+        ion-label {
+            color: var(--aracne-warning) !important;
+        }
+    }
+    ion-tab-button{
+        ion-label {
+            font-weight: bold;
+            color: var(--aracne-dark-primary) !important;
+        }
+    }
+}

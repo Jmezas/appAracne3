@@ -1,0 +1,29 @@
+.splash_background {
+    --background: url(../../../../assets/svg/background_login.png) no-repeat 0 0 / cover !important;
+    object-fit: cover;
+}
+
+.splash {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .splash-logo {
+            width: 170px;
+        }
+        ion-spinner {
+            color: #ffffff;
+            margin-top: 1rem;
+        }
+        .splash-upgrade {
+            color: #fff !important;
+            width: 280px;
+            text-align: center;
+            margin-top: 1rem;
+        }
+    }
+}

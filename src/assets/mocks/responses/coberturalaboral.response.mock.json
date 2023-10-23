@@ -1,0 +1,30 @@
+[
+    {
+        "UserId": "1",
+        "UserName": "Monica ramirez",
+        "UnidadNegocio": "unidad de negocio",
+        "State": "",
+        "Pos": "pos text",
+        "Rol": "2",
+        "HourAssistance": "11:40"
+    },
+    {
+        "UserId": "2",
+        "UserName": "Juan perez",
+        "UnidadNegocio": "unidad de negocio",
+        "State": "STATE",
+        "Pos": "pos text",
+        "Rol": "2",
+        "HourAssistance": "12:40"
+    },
+    {
+        "UserId": "3",
+        "UserName": "Pablo escobar",
+        "UnidadNegocio": "unidad de negocio",
+        "State": "",
+        "Pos": "pos text",
+        "Rol": "1",
+        "HourAssistance": "13:40"
+    }
+    
+]

@@ -1,0 +1,85 @@
+<ion-refresher slot="fixed" (ionRefresh)="refreshWorkingDayForms($event)">
+  <ion-refresher-content></ion-refresher-content>
+</ion-refresher> 
+
+<ion-grid style="padding-inline-start: unset !important; padding-inline-end: unset !important;" *ngIf="!isLoading">
+  <ion-row>
+    <ion-col size="12" style="display: flex; flex-direction: column; align-items: center; height: 100%; height: 100%;"
+      *ngIf="workDayFormsCollection.length == 0 && normalFormsCollection.length == 0">
+      <ion-text style="text-align: center;">
+        <h6>No existen formularios</h6>
+        <img [attr.src]="sad_face">
+      </ion-text>
+    </ion-col>
+
+    <ion-col [size]="(isInlineList ? 12 : 6)"
+      style="padding-inline-start: unset !important; padding-inline-end: unset !important;"
+      *ngFor="let item of workDayFormsCollection">
+      <ion-card
+        style="height: 100%; margin-inline: 5px !important; border-radius: 1rem; box-shadow: 5px 5px 24px rgb(0 0 0 / 20%);"
+        (click)="onSelectedForm(item.idFormularioJornada, true)">
+        <ion-card-content style="display: flex; align-items: center; height: 100%; border-radius: 1rem;"
+          [style.flex-direction]="isInlineList ? 'row' :'column'"
+          [style.justify-content]="isInlineList ? 'flex-start' : 'center'"
+          [style.border]="item.obligatorio && !item.isCompleted ? '#d05f5f 2px solid' : '#b9b9b9  2px solid'">
+
+          <img [attr.src]="item.obligatorioIcon" style="max-width: 7rem; position: absolute; top: 0.5rem; right: 1rem;"
+            *ngIf="item.obligatorio && !item.isCompleted">
+          <img [attr.src]="completed_icon" style="max-width: 7rem; position: absolute; top: 0.5rem; right: 1rem;"
+            *ngIf="item.isCompleted">
+          <img [attr.src]="item.temaFormularioIcon" [style.padding-right]="isInlineList ? '1rem' : 'unset'">
+
+          <div
+            style="display: flex; flex-direction: column; justify-content: start; border-left: 1px #bfbfbf solid; padding-left: 1rem !important;"
+            *ngIf="isInlineList">
+            <ion-label style="color: #06192b; font-weight: bold;">{{ item.nombreFormulario }}
+            </ion-label>
+            <ion-label style="color: #06192b; font-size: 0.8rem;">{{ item.temaFormulario }}</ion-label>
+          </div>
+
+          <ion-label style="color: #06192b; font-weight: bold; text-align: center; margin-top: 0.7rem;"
+            *ngIf="!isInlineList">{{
+            item.nombreFormulario }}
+          </ion-label>
+          <ion-label style="color: #06192b; font-size: 0.8rem;" *ngIf="!isInlineList">{{ item.temaFormulario }}
+          </ion-label>
+
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+    <ion-col [size]="(isInlineList ? 12 : 6)"
+      style="padding-inline-start: unset !important; padding-inline-end: unset !important;"
+      *ngFor="let item of normalFormsCollection">
+      <ion-card
+        style="height: 100%; margin-inline: 5px !important; border-radius: 1rem; box-shadow: 5px 5px 24px rgb(0 0 0 / 20%);"
+        (click)="onSelectedForm(item.idFormulario, false)">
+        <ion-card-content
+          style="display: flex; align-items: center; height: 100%; border: 2px solid #844f92; border-radius: 1rem;"
+          [style.flex-direction]="isInlineList ? 'row' :'column'"
+          [style.justify-content]="isInlineList ? 'flex-start' : 'center'">
+
+          <img [attr.src]="form_theme_icon" [style.padding-right]="isInlineList ? '1rem' : 'unset'">
+
+          <div
+            style="display: flex; flex-direction: column; justify-content: start; border-left: 1px #bfbfbf solid; padding-left: 1rem !important;"
+            *ngIf="isInlineList">
+            <ion-label style="color: #06192b; font-weight: bold;">{{ item.nombreFormulario }}
+            </ion-label>
+            <ion-label style="color: #06192b; font-size: 0.8rem;">Nro. Campos: {{ item.numeroCampos }}</ion-label>
+          </div>
+
+          <ion-label style="color: #06192b; font-weight: bold; text-align: center; margin-top: 0.7rem;"
+            *ngIf="!isInlineList">{{
+            item.nombreFormulario }}
+          </ion-label>
+          <ion-label style="color: #06192b; font-size: 0.8rem;" *ngIf="!isInlineList">Nro. Campos: {{
+            item.numeroCampos }}
+          </ion-label>
+
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+  </ion-row>
+</ion-grid>

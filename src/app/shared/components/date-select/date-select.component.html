@@ -1,0 +1,55 @@
+<!-- REFERENCIA DE LA LIBRERIA: https://github.com/HsuanXyz/ion2-calendar -->
+
+<ion-item detail="false" [id]="id" class="ion-margin-bottom" lines="none">
+  <ion-label class="aracne-label" position="stacked">{{ label }}</ion-label>
+  <ion-input
+    button="true"
+    class="aracne-input-clasic"
+    [value]="dateSelected ? dateSelected : ''"
+    [placeholder]="placeholderInput"
+    readonly
+  ></ion-input>
+</ion-item>
+
+<ion-modal
+  id="date-modal"
+  class="ion-padding"
+  [swipeToClose]="true"
+  [trigger]="id"
+>
+  <ng-template>
+    <ion-item-divider>
+      <div class="wrapper">
+        <ion-calendar
+          *ngIf="isRange; else basicCalendar"
+          [options]="optionsRange"
+          [type]="type"
+          [format]="'YYYY-MM-DD'"
+          (change)="onChange($event)"
+        >
+        </ion-calendar>
+        <ng-template #basicCalendar>
+          <ion-calendar
+            [type]="type"
+            [format]="'YYYY-MM-DD'"
+            (change)="onChange($event)"
+          >
+          </ion-calendar>
+        </ng-template>
+      </div>
+    </ion-item-divider>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-button fill="clear" expand="block" color="warning" (click)="cancelEvent()">
+          Limpiar
+        </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button fill="clear" expand="block" color="warning" (click)="acceptEvent()">
+          ACEPTAR
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ng-template>
+</ion-modal>

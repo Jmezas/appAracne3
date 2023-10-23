@@ -1,0 +1,5 @@
+<ion-searchbar showCancelButton="focus" (ionCancel)="onCancel($event)" cancelButtonIcon="close-circle-outline" *ngIf="isOpenSearch" animated [placeholder]="searchLabel" debounce="1000" class="ion-margin-end" ngClass="'collapsible': isOpenSearch" no-padding
+  (ionChange)="onSearchChange($event)"></ion-searchbar>
+<ion-button (click)="expandSearchBar()"  *ngIf="!isOpenSearch">
+  <ion-icon  slot="icon-only" name="search-outline"></ion-icon>
+</ion-button>

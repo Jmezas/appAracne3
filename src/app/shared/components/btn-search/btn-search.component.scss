@@ -1,0 +1,33 @@
+ion-searchbar.collapsible {
+    width: 100%; // match hard-coded padding-inline-end when collapsed
+                 // .searchbar-input {
+                 //   @include padding(6px, 55px);
+                 // }
+   
+    transition: width 0.5s ease-in-out;
+    --border-radius: 4px;
+   
+    .searchbar-input.sc-ion-searchbar-md {
+      transition-property: padding-inline-end, -webkit-padding-end;
+      transition-duration: 0.5s;
+      transition-timing-function: ease-in-out;
+    }
+   
+    &.searchbar-has-focus,
+    &.searchbar-has-value {
+      width: 100%;
+    }
+   
+    &:not(.searchbar-has-focus):not(.searchbar-has-value):hover input {
+      cursor: pointer;
+      background: var(--ion-color-step-100);
+    }
+   
+    &:not(.searchbar-has-focus),
+    &:not(.searchbar-has-value) {
+      .searchbar-input.sc-ion-searchbar-md {
+        -webkit-padding-end: 0;
+        padding-inline-end: 0;
+      }
+    }
+  }

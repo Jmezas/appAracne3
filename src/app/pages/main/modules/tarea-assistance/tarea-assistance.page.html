@@ -1,0 +1,423 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-title>asistencia</ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div style="text-align: center;" *ngIf="userReporterConfig">
+    <ion-chip>
+      <ion-avatar>
+        <img [attr.src]="userReporterIcon" />
+      </ion-avatar>
+      <ion-label>{{ userReporterConfig.usuario | titlecase }}</ion-label>
+    </ion-chip>
+  </div>
+  <div class="contenedor-inicio" *ngIf="!isLoading && salespointSelected != null && !isActivePDV">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="8.5">
+          <h5> {{ salespointSelected.nombrePdv }}
+          </h5>
+        </ion-col>
+        <ion-col size="3.5">
+          <span class="color-secundario" style="font-size: 13px;"> {{fechaActual | date: 'dd/MM/yyyy'}} </span>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h6 class="color-secundario" style="margin-top:-1rem !important">{{
+            salespointSelected.direccion }}</h6>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <!-- Asistencia de Inicio Jornada -->
+          <ion-card class="assitance-card" *ngIf="check_in_object != undefined" (click)="onCheckIn()"
+            [disabled]="check_in_marked">
+            <img [attr.src]="check_in_marked ? check_in_icon_active : check_in_icon" class="img-iniciar">
+            <ion-text>
+              <h4 [class.white]="check_in_marked">{{
+                check_in_object.tipoAsistencia }}</h4>
+              <!-- <span *ngIf="!check_in_marked">Pulsa para activar</span>
+          <span *ngIf="check_in_marked">{{ check_in_marked_hour }}</span> -->
+            </ion-text>
+            <ion-spinner name="crescent" style="margin-left: auto; color: #844f92;" *ngIf="check_in_marked_loading">
+            </ion-spinner>
+          </ion-card>
+          <ion-button (click)="performBackgroundFetch()" expand="full">Realizar llamada en segundo plano</ion-button>
+          <ion-button (click)="scheduleNotification()" expand="full">Programar notificación local</ion-button>
+        
+          <ion-button (click)="testSave()" expand="full">Guardar valores</ion-button>
+          <ion-button (click)="testLoad()" expand="full">Cargar valores</ion-button>
+          <ion-button (click)="newRequest()" expand="full">GeoLocal</ion-button>
+          <ion-item *ngIf="user">
+            <ion-avatar slot="start">
+              <img [src]="user.picture.thumbnail" />
+            </ion-avatar>
+            <ion-label>
+              <h2>{{ user.name.first }} {{user.name.last}}</h2>
+              <p>{{ user.email }}</p>
+            </ion-label>
+          </ion-item>
+          
+          <div class="div-Contenedor">
+            <a style="color:#707070 !important;" href="javascript:void(0)"
+              (click)="onShowModalCancelacion(salespointSelected)"> Cancelar visita</a>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <ion-grid *ngIf="!isLoading && infoPDV!=null && !isActivePDV">
+    <div class="div-Contenedor">
+      <ion-label style="color: #bcbcbc !important;">Última visita {{ infoPDV.fechaUltimaVisita }}</ion-label>
+    </div>
+    <ion-card class="assitance-card-info">
+      <ion-grid>
+        <ion-item class="ion-item-sin-bordes">
+          <ion-icon name="call" slot="start"></ion-icon>
+          <div style="display: flex; flex-direction: column; width: 10rem;">
+            <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+              <ion-label class="color-primario"> {{ infoPDV.nombreGerente }}</ion-label>
+              <label item-end class="color-secundario"> Gerente</label>
+            </div>
+            <ion-label floating class="color-secundario">
+              {{ infoPDV.telefono }}
+            </ion-label>
+          </div>
+        </ion-item>
+      </ion-grid>
+    </ion-card>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <ion-label floating class="color-primario">Canal PDV </ion-label>
+        </ion-col>
+        <ion-col size="6">
+          <span item-end class="color-secundario">{{ infoPDV.nombreCanal }} </span>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4">
+          <ion-label floating class="color-primario">Facturación </ion-label>
+        </ion-col>
+        <ion-col size="6">
+          <span item-end class="color-secundario">{{ infoPDV.facturacion }}</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <app-map [collections]="salesPointMapList" *ngIf="!isLoading">
+    </app-map>
+  </ion-grid>
+
+  <!-- modal de cancelar jornada-->
+  <ion-modal [isOpen]="isOpenModalCancel" [enterAnimation]="enterAnimation" [leaveAnimation]="leaveAnimation"
+    backdropDismiss="false">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar class="mi-toolbar">
+          <ion-title style="font-weight: bold; margin: 0 !important;color: #ffffff;">{{ salespointSelected.nombrePdv |
+            titlecase
+            }}</ion-title>
+          <ion-buttons slot="start">
+            <ion-button style="--color: #ffffff !important;" (click)="isOpenModalCancel = false">
+              <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <div class="contenedor-inicio">
+          <ion-grid>
+            <ion-row>
+              <ion-col size="8.5">
+                <h5 style="margin: 0 !important;">{{ salespointSelected.nombrePdv}}
+                </h5>
+              </ion-col>
+              <ion-col size="3.5">
+                <span style="font-size: 12px;"> {{fechaActual | date: 'dd/MM/yyyy'}} </span>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <h6 class="color-secundario" style="margin:-0.5rem 0 !important; font-weight: 300 !important;">{{
+                  salespointSelected.direccion }}</h6>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <label class="color-primario"> Cancelar Visita</label>
+            </ion-col>
+          </ion-row>
+          <br>
+          <ion-row>
+            <ion-col>
+              <label class="color-secundario">Motivo</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col style="padding-bottom:12px;">
+              <ion-select class="custom-select" placeholder="Selecciona un motivo" cancelText="Cancelar"
+                okText="Aceptar" [(ngModel)]="selectCacenlarJornada">
+                <ion-select-option text-wrap *ngFor="let option of motivoCancelacion"
+                  [value]="option.idMotivoCancelacion">{{
+                  option.MotivoCancelacion }}
+                </ion-select-option>
+              </ion-select>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <label class="color-secundario" style="margin-left:0.1rem">Adjuntar información adicional </label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <div class="input-file">
+                <button (click)="fileUpload.click()">
+                  <label> {{labelFileCancelar}} </label>
+                  <ion-icon lazy="true" slot="end" name="document-outline"></ion-icon>
+                  <input type="file" #fileUpload (change)="loadImageCancelar($event)">
+                </button>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-button expand="block" mode="ios" class="form-button" (click)="onCancelSalespoint();">
+            <label>{{ " Enviar Información " | titlecase }} </label>
+            <ion-spinner *ngIf="loading"></ion-spinner>
+          </ion-button>
+        </ion-grid>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <div *ngIf="isActivePDV">
+    <div class="contenedor-inicio">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="8.5">
+            <h5> {{ salespointSelected.nombrePdv }}
+            </h5>
+          </ion-col>
+          <ion-col size="3.5">
+            <span class="color-secundario" style="font-size: 12px;"> {{fechaActual | date: 'dd/MM/yyyy'}} </span>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <h6 class="color-secundario" style="margin-top:-1rem !important">{{
+              salespointSelected.direccion }}</h6>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <label style="margin-left:0.5rem" class="color-secundario"> Visita iniciada a las <strong>{{
+              check_in_marked_hour }}</strong></label>
+        </ion-row>
+        <ion-row>
+          <!-- Asistencia de Descanso Jornada -->
+          <ion-col size="6">
+            <ion-card class="card-descanso" *ngIf="!isLoading && check_partial_object.length > 0"
+              [disabled]="check_partial_marked_final">
+              <ion-card-header class="assitance-card-header-descanso">
+                <!-- <img
+                  [attr.src]="(check_partial_marked || check_partial_marked_final) ? check_partial_icon_stop : check_partial_icon" > -->
+                <div *ngIf="!check_partial_marked">
+                  <img [attr.src]="check_partial_icon_active" (click)="onCheckInPartial()">
+
+                </div>
+                <div *ngIf="check_partial_marked  && !check_partial_marked_final">
+                  <img [attr.src]="check_partial_icon_stop" (click)="onStopIntervalCheckInPartial()">
+                </div>
+                <div *ngIf="check_partial_marked_final">
+                  <img [attr.src]=" check_partial_icon">
+                </div>
+
+              </ion-card-header>
+              <ion-card-content>
+                <ion-text>
+                  <h4 [class.white]="check_partial_marked || check_partial_marked_final">
+                    <strong> {{ check_partial_title }} </strong>
+                  </h4>
+                  <div *ngIf="check_partial_inprogress">
+                    <span *ngIf="check_partial_marked || check_partial_marked_final">{{
+                      check_partial_marked_hour }}</span>
+                  </div>
+                </ion-text>
+
+                <ion-spinner name="crescent" style="margin-left: auto; color: #844f92;"
+                  *ngIf="check_partial_marked_loading">
+                </ion-spinner>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+
+          <!-- Asistencia de Fin Jornada -->
+          <ion-col size="6">
+            <ion-card class="card-checkout" *ngIf="!isLoading && check_out_object != undefined"
+              (click)="onModalCheckOut()">
+              <ion-card-header class="assitance-card-header-checkout">
+                <img [attr.src]="check_out_marked ? check_out_icon_active : check_out_icon">
+              </ion-card-header>
+              <ion-card-content class="assitance-card-content">
+                <ion-text>
+                  <h4 [class.white]="check_out_marked"> <strong> {{
+                      check_out_object.tipoAsistencia }}</strong></h4>
+                  <!-- <span *ngIf="!check_out_marked">Pulsa para activar</span> -->
+                  <span style="color: #ffffff !important" *ngIf="check_out_marked">{{
+                    check_out_marked_hour }}</span>
+                </ion-text>
+                <ion-spinner name="crescent" style="margin-left: auto; color: #844f92;"
+                  *ngIf="check_out_marked_loading">
+                </ion-spinner>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <ion-segment [(ngModel)]="selectedSegment">
+      <ion-segment-button class="segment-button" value="opcion1">
+        <ion-label style=" text-transform: none !important">Tareas </ion-label>
+      </ion-segment-button>
+      <ion-segment-button class="segment-button" value="opcion2">
+        <ion-label style=" text-transform: none !important">Info PDV</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
+    <ion-list *ngIf="selectedSegment === 'opcion1'" style="margin: 0rem 0.5rem;">
+      <app-form-list [isInlineList]="true"></app-form-list>
+    </ion-list>
+    <ion-list *ngIf="selectedSegment === 'opcion2'" style="margin: 0rem 0.5rem;">
+      <ion-item-group>
+        <ion-card class="assitance-card-info">
+          <ion-grid>
+            <ion-item class="ion-item-sin-bordes">
+              <ion-icon name="call" slot="start"></ion-icon>
+              <div style="display: flex; flex-direction: column; width: 10rem;">
+                <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                  <ion-label class="color-primario"> {{ infoPDV.nombreGerente }}</ion-label>
+                  <label item-end class="color-secundario"> Gerente</label>
+                </div>
+                <ion-label floating class="color-secundario">
+                  {{ infoPDV.telefono }}
+                </ion-label>
+              </div>
+            </ion-item>
+          </ion-grid>
+        </ion-card>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="4">
+              <ion-label floating class="color-primario">Canal PDV </ion-label>
+            </ion-col>
+            <ion-col size="6">
+              <span item-end class="color-secundario"> {{ infoPDV.nombreCanal }}</span>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="4">
+              <ion-label floating class="color-primario">Facturación </ion-label>
+            </ion-col>
+            <ion-col size="6">
+              <span item-end class="color-secundario">{{ infoPDV.facturacion }} </span>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item-group>
+
+      <!--Mapa-->
+      <app-map [collections]="salesPointMapList" *ngIf="!isLoading">
+      </app-map>
+    </ion-list>
+
+    <!-- modal de checkout-->
+    <ion-modal [isOpen]="isOpenModalCancel" [enterAnimation]="enterAnimation" [leaveAnimation]="leaveAnimation"
+      backdropDismiss="false">
+      <ng-template>
+        <ion-header>
+          <ion-toolbar class="mi-toolbar">
+            <ion-title style="font-weight: bold; margin: 0 !important;color: #ffffff;">{{ salespointSelected.nombrePdv |
+              titlecase
+              }}</ion-title>
+            <ion-buttons slot="start">
+              <ion-button style="--color: #ffffff !important;" (click)="isOpenModalCancel = false">
+                <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
+              </ion-button>
+            </ion-buttons>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding block">
+          <div class="contenedor-inicio">
+            <ion-grid>
+              <ion-row>
+                <ion-col size="8.5">
+                  <h6 style="margin: 0 !important;" class="color-primario">{{ salespointSelected.nombrePdv }}
+                  </h6>
+                </ion-col>
+                <ion-col size="3.5">
+                  <span class="color-secundario" style="font-size: 12px;"> {{fechaActual | date: 'dd/MM/yyyy'}} </span>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <h6 class="color-secundario" style="margin:-0.5rem 0 !important; font-weight: 300 !important;">{{
+                    salespointSelected.direccion }}</h6>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </div>
+
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <label class="color-primario"> Check-out</label>
+              </ion-col>
+            </ion-row>
+            <br>
+            <ion-row>
+              <ion-col>
+                <label class="color-secundario">¿Cómo ha ido la visita?</label>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-select class="custom-select" placeholder="Toque para seleccionar" cancelText="Cancelar"
+                  okText="Aceptar" [(ngModel)]="selectCheckOutJornada">
+                  <ion-select-option *ngFor="let option of motivoCheckout" [value]="option.idMotivoCheckout">{{
+                    option.motivoCheckout }}
+                  </ion-select-option>
+                </ion-select>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <label class="color-secundario" style="margin-left:0.1rem">Adjuntar información adicional </label>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <div class="input-file">
+                  <button (click)="fileUploadCheckout.click()">
+                    <label> {{labelFileCheckout}} </label>
+                    <ion-icon lazy="true" slot="end" name="document-outline"></ion-icon>
+                    <input type="file" #fileUploadCheckout (change)="loadImageCheckout($event)">
+                  </button>
+                </div>
+              </ion-col>
+            </ion-row>
+            <ion-button expand="block" mode="ios" class="form-button" (click)="onCheckOut()">
+              <label>{{ "Finalizar visita" | titlecase }} </label>
+              <ion-spinner *ngIf="loading"></ion-spinner>
+            </ion-button>
+          </ion-grid>
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+  </div>
+
+</ion-content>

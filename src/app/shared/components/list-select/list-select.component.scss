@@ -1,0 +1,28 @@
+.fixed-bottom {
+    position: sticky;
+    left: 0;
+    // bottom: 1rem;
+    right: 0;
+}
+
+.full-screen {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+ion-card {
+    border-radius: 20px;
+}
+
+ion-checkbox {
+    --size: 24px;
+    --background-checked: var(--aracne-red-primary);
+    margin-right: 1.5rem;
+  }
+  ion-checkbox::part(container) {
+    border-radius: 6px;
+    border: 2px solid var(--aracne-red-primary);
+  }

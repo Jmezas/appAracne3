@@ -1,0 +1,68 @@
+:host::ng-deep ion-slide {
+    border: 1px #f4f4f4 solid;
+    border-radius: 5px;
+    padding-top: 1rem !important; 
+    padding-bottom: 1rem !important;
+}  
+
+:host::ng-deep ion-content {
+    #calendarMap {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 150ms ease-in;
+        display: block;
+        &.show-map {
+            opacity: 1;
+        }
+    }
+}
+.contenedor-inicio{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    margin-top: -1rem !important; 
+    margin: 1rem -1rem;
+    background: rgba(238, 241, 244, 1);
+    box-shadow: 5px 5px 5px #d9d9d9;
+    & ion-grid {
+        margin-top: 0.5rem !important;
+        margin:1rem;
+    }
+    & h4{ 
+        margin-top: 0px !important; 
+        font-weight: bold;
+    }
+}
+ 
+:host::ng-deep ion-content {
+    #calendarMaps {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 150ms ease-in;
+        display: block;
+        &.show-map {
+            opacity: 1;
+        }
+    }
+} 
+
+.quizz-progress {  
+    ion-progress-bar {
+       --background: #F6F6F6 !important; 
+       --progress-background: #693B70 !important;
+     }
+} 
+
+:host::ng-deep .list-salespoint {
+    & ion-item:not(:first-child) {
+        margin-top: 1.25rem;
+    }
+    & ion-item::part(native) {
+        padding-inline-start: unset !important;
+    }
+    // & ion-item:last-child {
+    //     --border-color: transparent !important;
+    // }
+}

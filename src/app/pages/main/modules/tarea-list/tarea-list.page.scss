@@ -1,0 +1,15 @@
+ion-fab-button::part(native) {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    border: #b9b9b9  1px solid;
+    box-shadow: 5px 5px 20px rgb(0 0 0 / 25%);
+    color: black;
+}
+
+ion-fab-button::part(native):hover::after {
+    background-color: #ffffff;
+}
+
+ion-fab-button::part(native):active::after {
+    background-color: #ffffff;
+}

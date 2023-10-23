@@ -1,0 +1,63 @@
+<ion-item button="true" [id]="id" class="ion-margin-bottom" lines="none">
+  <ion-label class="aracne-label" position="stacked">{{label}}</ion-label>
+  <ion-input class="aracne-input-clasic" [value]="(itemSelected) | titlecase" [placeholder]="placeholderInput"
+    readonly></ion-input>
+    <!-- *ngIf="!multiple; else textAreaItem"  -->
+  <!-- <ng-template #textAreaItem>
+    <ion-textarea class="aracne-input-clasic" readonly [value]="itemSelected">
+    </ion-textarea>
+  </ng-template> -->
+</ion-item>
+
+
+<ion-modal [trigger]="id" [isOpen]="initOpenModal" (willDismiss)="onWillDismiss($event)">
+  <ng-template>
+    <ion-content class="container-bg-gray">
+      <app-header-modules
+        [moduleTitle]="'Reportes'"
+        [searchBarConfig]="searchBarConfig"
+        [btnCloseModal]="true"
+        (resultSearch)="onSearchChange($event)"
+      ></app-header-modules>
+      <ion-list  *ngIf="_data && _data.length>0; else NotDataMessage" class="ion-padding aracne-list container-bg-transparent ">
+        <ion-card *ngFor="let item of _data">
+        <ion-item [class]="'item-user-select usc-'+item.value" button="true"
+          (click)="eventSelectItem(item)">
+          <!-- *ngIf="!multiple; else checkboxItem" -->
+          <ion-avatar  slot="start" style="display: flex; 
+          justify-content: center;
+          align-items: center;">
+            <ion-icon *ngIf="item.configIcon" [color]="item.configIcon.color" [name]="item.configIcon.icon"  style="font-size: 40px"></ion-icon>
+            <img *ngIf="item.image" [src]="item.image" style="height: 30px; width: 30px;" />
+          </ion-avatar>
+          <!-- <ng-template #checkboxItem>
+            <ion-checkbox color="primary"></ion-checkbox>
+          </ng-template> -->
+          <ion-label>
+            <h3 class="aracne-item-title">{{item.value}}</h3>
+            <p class="aracne-item-subtitle">{{item.subTitle}}</p>
+            <p class="aracne-item-subtitle" *ngIf="item.subTitle2">{{item.subTitle2}}</p>
+          </ion-label>
+        </ion-item>
+      </ion-card>
+      </ion-list>
+      
+    </ion-content>
+    
+  <div class="fixed-bottom">
+    <!-- Boton usado para modal con lista de seleccion multiple -->
+    <!-- <ion-button *ngIf="multiple" (click)="eventEmitListSelected()" fill="clear" class="btn-aracne  btn-aracne-dark text-white btn-block">
+      {{textButton}}
+    </ion-button> -->
+    <!-- Boton usado para modal con boton adicional - El evento o funcion se desarrollara en el componente padre -->
+    <ion-button *ngIf="useAdditionalBtn" (click)="eventEmitClick()" fill="clear" class="btn-aracne  btn-aracne-dark text-white btn-block">
+      {{textButton}}
+    </ion-button>
+  </div>
+  </ng-template>
+</ion-modal>
+
+<ng-template #NotDataMessage>
+  <app-view-message [message]="messageNotData"></app-view-message>
+</ng-template>
+

@@ -1,0 +1,20 @@
+{
+  "/Api/Get/*": {
+    "target": "https://aracnewsr.salesland.net/Api/Get",
+    "changeOrigin": true,
+    "secure": false,
+    "pathRewrite": { "^/Api/Get": "" }
+  },
+  "/Api/Execute/*": {
+    "target": "https://aracnewsr.salesland.net/Api/Execute",
+    "changeOrigin": true,
+    "secure": false,
+    "pathRewrite": { "^/Api/Execute": "" }
+  },
+  "/Api/Post/*": {
+    "target": "https://aracnewsr.salesland.net/Api/Post",
+    "changeOrigin": true,
+    "secure": false,
+    "pathRewrite": { "^/Api/Post": "" }
+  }
+}

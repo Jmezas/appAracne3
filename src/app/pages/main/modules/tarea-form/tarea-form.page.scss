@@ -1,0 +1,109 @@
+.accordion-form {
+    margin: 1rem 0;
+    font-size: 0.8rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 24px rgb(0 0 0 / 20%);
+}
+.form-title {
+    font-family: Lato;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.1rem 0;
+    white-space: normal !important;
+}
+.label-stacked.sc-ion-label-md-h{
+  ---webkit-transform:none !important;
+  transform: none !important;
+}
+.form-input {
+    font-size: 0.9rem;
+    border: #fff 1px solid;
+    border-radius: 15px;
+    padding: 0.1rem 1rem !important;
+    --background: #fff;
+}
+.form-button {
+    height: 2.5em !important;
+    font-size: 0.9rem !important;
+    margin: 1rem !important;
+    color: #ffffff !important;
+    --background-activated: #06192b !important;
+    --background-focused: #06192b !important;
+    --background-hover: #06192b !important;
+}
+.form-button-clean {
+    height: 2.5em !important;
+    font-size: 0.9rem !important;
+    margin: 1rem !important;
+    color: #06192b !important;
+    --background-activated: #c8c8c8 !important;
+    --background-focused: #c8c8c8 !important;
+    --background-hover: #c8c8c8 !important;
+}
+
+.item-background-color,
+.item-background-color:hover,
+.item-background-color:focus {
+    --ion-item-background: #f2f2f2 !important;
+}
+
+:host::ng-deep .sc-ion-buttons-ios-s ion-button {
+    font-size: 0.9rem !important;
+}
+
+ion-button:not(.in-toolbar) {
+    --border-radius: 30px !important;
+    --background: #06192b !important;
+}
+ion-button.button-disabled {
+    --background: #9e9e9e !important;
+}
+
+:host::ng-deep .item-has-focus .label-stacked.sc-ion-label-md-h:not(.ion-color) {
+    color: #000000 !important;
+}
+
+:host::ng-deep ion-select::part(icon) {
+    display: none !important;
+}
+:host::ng-deep .item-interactive-disabled:not(.item-multiple-inputs) .sc-ion-label-md-h,
+:host::ng-deep .native-input[disabled].sc-ion-input-md,
+:host::ng-deep .native-inout[disabled].sc-ion-input-ios,
+:host::ng-deep .native-textarea[disabled].sc-ion-textarea-md,
+:host::ng-deep .native-textarea[disabled].sc-ion-textarea-ios
+:host::ng-deep .select-disabled,
+:host::ng-deep .card-disabled,
+:host::ng-deep .toggle-disabled {
+    opacity: unset !important;
+}
+:host::ng-deep .alert-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+:host::ng-deep .alert-wrapper::before {
+    content: url(../../../../../assets/svg/alert_error.svg) !important;
+    max-width: 75px !important;
+    margin-top: 1rem !important;
+}
+:host::ng-deep ion-item.item_completed > ion-icon {
+    margin-bottom: unset !important;
+}
+ion-fab-button::part(native) {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    border: #b9b9b9 1px solid;
+    box-shadow: 5px 5px 20px rgb(0 0 0 / 25%);
+    color: black;
+    & .activeButton {
+        border: #844f92 1px solid;
+    }
+}
+
+ion-fab-button::part(native):hover::after {
+    background-color: #ffffff;
+}
+
+ion-fab-button::part(native):active::after {
+    background-color: #ffffff;
+}

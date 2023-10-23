@@ -1,0 +1,11 @@
+ion-list-header {
+  padding-inline-start: unset !important;
+}
+ion-item {
+  --inner-padding-end: unset !important;
+}
+ion-item::part(native) {
+  & item-inner {
+    padding-inline-end: unset !important;
+  }
+}

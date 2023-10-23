@@ -1,0 +1,9 @@
+<ion-app>
+  <app-splash *ngIf="!hideSplash; else mainContent"></app-splash>
+
+  <ng-template #mainContent>
+    <ion-content  id="main-content">
+      <ion-router-outlet></ion-router-outlet>
+    </ion-content>
+  </ng-template>
+</ion-app>

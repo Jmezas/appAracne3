@@ -1,0 +1,34 @@
+<ion-card *ngIf="dataReport" class="card-reporte-ventas">
+  <ion-card-content>
+    <ion-item>
+      <ion-label>Referencia</ion-label>
+      <span>{{dataReport.Producto}}</span>
+    </ion-item>
+
+    <ion-item button>
+      <ion-label (click)="openModalInputValue('Ventas', 'Escribe Algo ...', 'sales', 999)">Ventas</ion-label > <span>{{dataProductModify.sales}}</span>
+    </ion-item>
+
+    <ion-item button>
+      <ion-label (click)="openModalInputValue('Stock', 'Escribe Algo ...', 'stock', 999)">Stock</ion-label > <span>{{dataProductModify.stock}}</span>
+    </ion-item>
+
+    <ion-item button>
+      <ion-label (click)="openModalInputValue('Precio', 'Escribe Algo ...', 'price', 99999999)">Precio</ion-label > <span>{{dataProductModify.price}}</span>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Stock Inicial</ion-label > <span></span>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Ingresos</ion-label > <span></span>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Stock Final</ion-label > <span></span>
+    </ion-item>
+
+    
+  </ion-card-content>
+</ion-card>

@@ -1,0 +1,50 @@
+<ion-content class="login_background">
+  <form [formGroup]="loginForm">
+    <ion-grid>
+      <ion-row>
+        <img [attr.src]="aracne_logo">
+      </ion-row>
+      <ion-row style="display: flex; justify-content: center;" *ngIf="!loading">
+        <ion-col style="max-width: 25rem;">
+          <div class="ion-padding" class="login_container">
+            <ion-item>
+              <ion-input placeholder="Usuario de acceso" formControlName="usuario"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input [attr.type]="passwordMode" class="input_password" placeholder="Clave de acceso"
+                formControlName="password">
+              </ion-input>
+              <ion-icon [name]="show_password_icon" class="show_password" slot="end" (click)="showPassword()">
+              </ion-icon>
+            </ion-item>
+            <!-- <h6 class="remember_password">
+              ¿Olvidaste tu contraseña?
+            </h6> -->
+            <div class="politics">
+              <ion-checkbox mode="ios" color="medium" formControlName="readPrivacityPolicy">
+              </ion-checkbox>
+              <ion-label><small>He leído y acepto la <a [routerLink]="['/privacy-policy']">política de
+                    privacidad.</a></small></ion-label>
+            </div>
+            <div class="politics">
+              <ion-checkbox mode="ios" color="medium" formControlName="acceptPrivacityPolicy">
+              </ion-checkbox>
+              <ion-label><small>Autorizo el uso de mis datos
+                  personales para <a [routerLink]="['/privacy-policy']">finalidades opcionales previstas en la Política
+                    de Privacidad.</a></small></ion-label>
+            </div>
+            <ion-button shape="round" fill="outline" class="login_button"
+              [disabled]="!loginForm.valid || !loginForm.get('acceptPrivacityPolicy').value == true || !loginForm.get('readPrivacityPolicy').value == true"
+              (click)="signIn()">{{ 'entrar' | lowercase }}
+            </ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="row_loading" *ngIf="loading">
+        <ion-label>{{ process_login }}
+        </ion-label>
+        <ion-spinner name="crescent"></ion-spinner>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>

@@ -1,0 +1,28 @@
+<ng-container>
+  <ng-template ngFor let-parentKpi [ngForOf]="dataKpis" let-i="index">
+    <ion-card ngClass="card-kpi" [ngStyle]="{'margin-top': (i == 0 ? '1.5rem' : '0.625rem')}">
+      <ion-card-content>
+
+        <div class="ion-activatable ripple-parent" (click)="toggleKpis()">
+          <ion-icon [name]="kpiView"></ion-icon>
+          <ion-ripple-effect></ion-ripple-effect>
+        </div>
+
+        <ion-list mode="ios" lines="full">
+          <ion-list-header>
+            <ion-label>{{ parentKpi.nombreFormulario }}</ion-label>
+          </ion-list-header>
+          <ng-template ngFor let-childKpi [ngForOf]="parentKpi.kpis">
+            <ion-item *ngIf="isInline">
+              <ion-label>{{ childKpi.descriptorKpi }}
+              </ion-label>
+              <ion-label style="text-align: right;">{{ childKpi.valorKpi }}</ion-label>
+            </ion-item>
+          </ng-template>
+        </ion-list>
+
+        <app-chart-bars [chartBasicConfig]="parentKpi.graphicKpi" *ngIf="!isInline"></app-chart-bars>
+      </ion-card-content>
+    </ion-card>
+  </ng-template>
+</ng-container>

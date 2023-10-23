@@ -1,0 +1,31 @@
+.container-bg-gray {
+    --background: var(--aracne-bg-gray) !important;
+    background-color: var(--aracne-bg-gray);
+}
+
+.container-bg-transparent {
+    background-color: transparent;
+}
+
+ion-item {
+    --background: transparent !important;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.content-card-image {
+    padding: 10px;
+    background: #EAEEF6;
+    border: solid 1px #DCE1EC;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.content-100 {
+    width: 100%;
+}

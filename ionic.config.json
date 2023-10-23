@@ -1,0 +1,7 @@
+{
+  "name": "Aracne 3",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
