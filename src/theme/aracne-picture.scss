@@ -1,0 +1,20 @@
+.take-picture-container {
+    border: solid 2px var(--aracne-footer-text);
+    border-style: dashed;
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    max-height: 10rem;
+    min-height: 8rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-photo-container {
+    color: var(--aracne-footer-text);
+    font-size: 80px;
+}

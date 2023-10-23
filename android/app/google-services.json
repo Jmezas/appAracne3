@@ -1,0 +1,40 @@
+{
+    "project_info": {
+      "project_number": "841191927350",
+      "firebase_url": "https://aracne.firebaseio.com",
+      "project_id": "aracne",
+      "storage_bucket": "aracne.appspot.com"
+    },
+    "client": [
+      {
+        "client_info": {
+          "mobilesdk_app_id": "1:841191927350:android:c06900bdf528ddd13b7297",
+          "android_client_info": {
+            "package_name": "com.aracnereport.aracne3"
+          }
+        },
+        "oauth_client": [
+          {
+            "client_id": "841191927350-ujg8s340v0br0q0sms86menqkvtmg203.apps.googleusercontent.com",
+            "client_type": 3
+          }
+        ],
+        "api_key": [
+          {
+            "current_key": "AIzaSyBgflYBn_i2-TwyI6OJn660NfzZOnjmV08"
+          }
+        ],
+        "services": {
+          "appinvite_service": {
+            "other_platform_oauth_client": [
+              {
+                "client_id": "841191927350-ujg8s340v0br0q0sms86menqkvtmg203.apps.googleusercontent.com",
+                "client_type": 3
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "configuration_version": "1"
+  }

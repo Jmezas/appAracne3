@@ -1,0 +1,77 @@
+<ion-item  *ngIf="type==='TEXTBOX'; else TYPE_BUTTON" button="true" [id]="id" class="ion-margin-bottom" lines="none">
+  <ion-label class="aracne-label" position="stacked">{{label}}</ion-label>
+  <ion-input class="aracne-input-clasic"  [value]="(itemSelected) | titlecase" [placeholder]="placeholderInput"
+    readonly></ion-input>
+</ion-item>
+
+<ng-template #TYPE_BUTTON>
+  <ion-button button="true" [id]="id" expand="block" fill="clear" shape="round">
+   {{textTypeButton}}
+  </ion-button>
+</ng-template>
+
+
+<ion-modal [ngClass]="{'list-checkbox': !fullScreen}"  #modal [trigger]="id">
+  <ng-template >
+      <div *ngIf="!fullScreen">
+        <ion-item-divider>
+        <div class="wrapper">
+          <form [formGroup]="checkboxForm">
+            <ion-text color="primary">
+              <h4 class="title-list-checkbox">{{titleModal}}</h4>
+            </ion-text>
+            <ion-list lines="none">
+              <ion-item *ngFor="let item of _data; let i=index">
+                <ion-label>{{item.value}}</ion-label>
+                <ion-checkbox slot="start" [value]="item.id" [checked]="item.checked"
+                  (ionChange)="onSelectionChange($event,i)">
+                </ion-checkbox>
+              </ion-item>
+            </ion-list>
+          </form>
+        </div>
+        </ion-item-divider>
+        <ion-row>
+          <ion-col size="6">
+            <ion-button  (click)="eventCloseModal()" fill="clear" expand="block" color="warning">
+              CANCELAR
+            </ion-button>
+          </ion-col>
+          <ion-col size="6">
+            <ion-button  (click)="submitForm()" fill="clear" expand="block" color="warning">
+              ACEPTAR
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </div>
+      
+
+        <ion-content *ngIf="fullScreen">
+          <app-header-modules
+            [moduleTitle]="'Gestión de Jornada'"
+            [btnCloseModal]="true"
+            (resultSearch)="onSearchChange($event)"
+          ></app-header-modules>
+          <div class="wrapper">
+            <form [formGroup]="checkboxForm">
+              <ion-list lines="none" *ngIf="_data">
+                <ion-item *ngFor="let item of _data; let i=index">
+                  <ion-label>
+                    <h3 class="aracne-item-title">{{item.value}}</h3>
+                    <p class="aracne-item-subtitle">{{item.subTitle}}</p>
+                  </ion-label>
+                  <ion-checkbox slot="start" [value]="item.id" [checked]="item.checked"
+                    (ionChange)="onSelectionChange($event,i)">
+                  </ion-checkbox>
+                </ion-item>
+              </ion-list>
+            </form>
+          </div>
+          <div>
+            <ion-button  (click)="submitForm()" fill="clear" expand="block" color="warning">
+              ACEPTAR
+            </ion-button>
+          </div>
+        </ion-content>
+  </ng-template>
+</ion-modal>

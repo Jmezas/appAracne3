@@ -1,0 +1,12 @@
+<ion-button (click)="loadCheckIn()" expand="full">Load CheckIn</ion-button>
+<ion-button (click)="loadCheckins()" expand="full">Load Checkins</ion-button>
+<ion-card style="height: 250px; border-radius: 16px; margin-top: 1.25rem; width: 90%;"
+  [ngStyle]="{'display' : isLoading ? 'none' : ''}">
+  <ion-card-content style="display: flex; flex-direction: column;" *ngIf="isWithoutMap">
+    <h6 style="text-align: center;">Mapa no disponible. Vuelva a conectarse a internet y refresque esta vista.
+    </h6>
+    <img [attr.src]="sad_face" style="margin-top: 1rem;">
+  </ion-card-content>
+  <div #assistanceMap id="assistanceMap"></div>
+  <!-- <div [attr.id]="isTipoAsistance === 1 ? 'assistanceStartMap' : 'assistanceMap'"></div> -->
+</ion-card>

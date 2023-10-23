@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-title>tarea-list</ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div style="text-align: center;" *ngIf="userReporterConfig">
+    <ion-chip>
+      <ion-avatar>
+        <img [attr.src]="userReporterIcon" />
+      </ion-avatar>
+      <ion-label>{{ userReporterConfig.usuario | titlecase }}</ion-label>
+    </ion-chip>
+  </div> 
+  <div style="display: flex; flex-direction: row; justify-content: space-between; margin-top: 1rem !important;"
+    *ngIf="salespointSelected != null">
+    <ion-text>
+      <h4 style="font-weight: bold; margin: 0 !important; color: #06192b;">{{ salespointSelected.nombrePdv }}</h4>
+      <h6 style="margin: 0.7rem 0 !important; font-weight: 100; color: #06192b;">{{ salespointSelected.direccion }}</h6>
+    </ion-text>
+    <!-- <img [attr.src]="list_icon" style="max-width: unset;" (click)="toggleListView()">  -->
+    <ion-fab slot="fixed" vertical="top" horizontal="end">
+      <ion-fab-button size="small">
+        <ion-icon name="chevron-down-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="bottom">
+        <ion-fab-button>
+          <ion-icon [name]="list_icon" (click)="toggleListView()"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button *ngIf="enabledKpis">
+          <ion-icon name="analytics-outline" (click)="onShowIndicatorView()"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+  </div>
+
+  <form-list [isInlineList]="isInlineList" *ngIf="showForms">
+  </form-list>
+
+  <form-kpi *ngIf="showKpis"></form-kpi>
+</ion-content>

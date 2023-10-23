@@ -1,0 +1,15 @@
+:host::ng-deep ion-toolbar {
+    --ion-color-base: #fff !important;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 10%) !important;
+    --background:#06192b;
+}
+.internet-connect {
+    width: 100%;
+    text-align: center;
+    background-color: #d05f5f;
+    opacity: 0;
+    transition: all 1s linear;
+    & span {
+        color: #fff !important;
+    }
+}

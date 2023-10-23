@@ -1,0 +1,299 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-title>tarea-form</ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-menu menuId="formFilterMenu" contentId="contentFilterMenu">
+  <ion-header>
+    <ion-toolbar>
+      <!-- <ion-title>{{ formNameSelected }}</ion-title> -->
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <div style="text-align: center; font-size: 1.25rem; font-weight: bold; margin-bottom: 2rem;">
+      <ion-label>Filtros</ion-label>
+    </div>
+    <ng-template ngFor let-item [ngForOf]="formFilters" let-index="index">
+      <ion-label class="form-title">
+        {{ item.subtitle }}</ion-label>
+      <ion-select
+        style="font-size: 0.9rem; min-height: 40px; min-width: 100%; border: #fff 1px solid; border-radius: 15px; padding: 0.1rem 1rem !important; background: #fff;"
+        [interfaceOptions]="customAlertSelectOptions" interface="alert"
+        [placeholder]="item.options.length == 0 ? 'Sin datos' : 'Toque para seleccionar'" cancelText="Cancelar"
+        okText="Aceptar" [disabled]="item.options.length == 0 ? true : false"
+        (ionFocus)="customAlertSelectOptions.header = item.subtitle"
+        (ionChange)="onSelectedFilterChange(item.identifier, index, $event)" [value]="item.valueSelected">
+        <ion-select-option *ngFor="let option of item.options" [value]="option.valueId">
+          {{ option.valueName }}
+        </ion-select-option>
+      </ion-select>
+    </ng-template>
+    <div style="display: flex; flex-direction: row; justify-content: space-between;">
+      <ion-button expand="block" mode="ios" class="form-button-clean" style="width: 100%; margin-inline: 0.25rem !important; 
+      --background: #c8c8c8 !important;" [disabled]="isEnabledFilterApply" (click)="onCleanFilterForm()">Limpiar
+      </ion-button>
+      <ion-button expand="block" mode="ios" class="form-button" style="width: 100%; margin-inline: 0.25rem !important;"
+        [disabled]="isEnabledFilterApply" (click)="onFilterForm()">Aplicar
+      </ion-button>
+    </div>
+  </ion-content>
+</ion-menu>
+
+<ion-content class="ion-padding" id="contentFilterMenu">
+  <ion-fab slot="fixed" vertical="top" horizontal="start"
+    *ngIf="!isLoadingForm && isWorkDayFormSelected && formFilters.length > 0">
+    <ion-fab-button size="small" [ngClass]="{'activeButton': isEnabledFinishForm}" (click)="openMenuFilters()">
+      <ion-icon name="filter"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-fab slot="fixed" vertical="top" horizontal="end"
+    *ngIf="!isLoadingForm && isWorkDayFormSelected && formFilters.length > 0 && isEnabledFinishForm">
+    <ion-fab-button size="small" (click)="onFinishForm()">
+      <ion-icon name="cloud-upload"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <div style="display: flex; flex-direction: column; align-items: center; margin-top: 1rem; padding-inline: 3rem;"
+    *ngIf="!isLoadingForm">
+    <ion-chip *ngIf="userReporterConfig">
+      <ion-avatar>
+        <img [attr.src]="userReporterIcon" />
+      </ion-avatar>
+      <ion-label>{{ userReporterConfig.usuario | titlecase }}</ion-label>
+    </ion-chip>
+    <ion-text [ngStyle]="{'margin-top': userReporterConfig != null ? '0.5rem' : ''}">
+      <h4 style="font-weight: bold; text-align: center; margin: 0 !important;">{{ formNameSelected }}</h4>
+    </ion-text>
+  </div>
+
+  <form [formGroup]="questionForm">
+    <ion-refresher slot="fixed" [disabled]="isEnabledNotPull"
+      (ionRefresh)="refreshQuestionByForm($event, isWorkDayFormSelected)">
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+
+    <!-- Formulario jornada de PDV -->
+    <ion-accordion-group [ngStyle]="{'display' : isLoadingForm ? 'none' : 'block'}" #questionAccordion>
+      <ng-template ngFor let-item [ngForOf]="questionList">
+        <ion-accordion [value]="item.idDetalleTema" class="accordion-form" *ngIf="isWorkDayFormSelected"
+          [ngStyle]="{'display' : !item.isVisible ? 'none' : ''}">
+          <ion-item slot="header" lines="none"
+            style="height: 4.5rem; background: #fff; display: flex; flex-direction: column; justify-content: center;"
+            [ngClass]="{'item_completed': item.isCompleted }">
+            <img [attr.src]="completedIcon" style="max-width: 7rem; position: absolute; top: -0.3rem; right: 1rem;"
+              *ngIf="item.isCompleted">
+            <ion-img [src]="item.imagenTema" style="padding-right: 1rem; max-height: 4.25rem; max-width: 4.25rem;"
+              *ngIf="item.imagenTema != null"></ion-img>
+            <div [ngStyle]="{'border-left' : item.imagenTema != null ? '1px #bfbfbf solid' : ''}"
+              style="display: flex; flex-direction: column; justify-content: start; padding-left: 1rem !important; max-width: 15.5rem;">
+              <ion-label style="font-weight: bold; color: #06192b !important;">{{ item.detalleTema }}
+              </ion-label>
+            </div>
+          </ion-item>
+
+          <div slot="content"
+            style="border: 1px #f2f2f2 solid; border-top-left-radius: 1rem; border-top-right-radius: 1rem; background: #f2f2f2 !important;">
+            <ion-list style="padding: 0 !important; margin-top: 1rem; background: unset !important;">
+              <ng-template ngFor let-i="index" let-question [ngForOf]="item.campos">
+                <ion-item lines="none" class="item-background-color" *ngIf="question.visible">
+                  <ion-label class="form-title" style="color: #06192b !important;" position="stacked">
+                    {{ question.nombreCampo | titlecase }}
+                    <span *ngIf="question.obligatorio"> * </span>
+                  </ion-label>
+
+                  <div style="width: 100%; margin: 1rem 0;" [ngSwitch]="question.idTipoCampo">
+                    <!-- Input Text / Numeric -->
+                    <ion-input
+                      *ngSwitchCase="question.idTipoCampo == 1 || question.idTipoCampo == 3 ? question.idTipoCampo : ''"
+                      class="form-input" [type]="question.idTipoCampo == 1 ? 'text' : 'number'"
+                      placeholder="Escriba su respuesta" [formControlName]="question.idControl"
+                      [disabled]="item.isCompleted">
+                    </ion-input>
+                    <!-- Input Date -->
+                    <ion-input *ngSwitchCase="2" locale="es-ES" class="form-input" placeholder="Toque para seleccionar"
+                      [id]="question.idControl" [formControlName]="question.idControl" [disabled]="item.isCompleted"
+                      readonly>
+                    </ion-input>
+                    <ion-modal #modal keepContentsMounted="true"
+                      [trigger]="!item.isCompleted ? question.idControl : undefined" *ngSwitchCase="2">
+                      <ng-template>
+                        <ion-header>
+                          <ion-toolbar>
+                            <ion-title>{{ question.nombreCampo | titlecase }}</ion-title>
+                            <ion-buttons slot="end">
+                              <ion-button style="--color: #844f92 !important;" (click)="modal.dismiss()">
+                                <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+                              </ion-button>
+                            </ion-buttons>
+                          </ion-toolbar>
+                        </ion-header>
+                        <ion-content class="ion-padding">
+                          <ion-datetime
+                            style="--background: #fff !important; --ion-color-base: #844f92 !important; padding: 1rem 0rem;"
+                            locale="es-ES" presentation="date"
+                            (ionChange)="onChangeDate($event, question.idControl); modal.dismiss();">
+                          </ion-datetime>
+                        </ion-content>
+                      </ng-template>
+                    </ion-modal>
+                    <!-- Input Check Yes or Not -->
+                    <ion-item style="width: 60%;" lines="none" *ngSwitchCase="4">
+                      <ion-label style="font-size: 0.9rem; font-family: Lato;">No</ion-label>
+                      <ion-toggle mode="ios" style="--background-checked: #8fc886 !important;"
+                        [formControlName]="question.idControl" [disabled]="item.isCompleted"></ion-toggle>
+                      <ion-label style="font-size: 0.9rem; font-family: Lato; padding-left: 1rem;">Sí
+                      </ion-label>
+                    </ion-item>
+                    <!-- Input Optional Multiple -->
+                    <ion-select
+                      *ngSwitchCase="question.idTipoCampo == 5 || question.idTipoCampo == 7 ? question.idTipoCampo : ''"
+                      style="font-size: 0.9rem; min-height: 40px; min-width: 100%; border: #fff 1px solid; border-radius: 15px; padding: 0.1rem 1rem !important; background: #fff;"
+                      [formControlName]="question.idControl" [multiple]="question.idTipoCampo == 7 ? true : false"
+                      placeholder="Toque para seleccionar" [disabled]="item.isCompleted" cancelText="Cancelar"
+                      okText="Aceptar" (ionChange)="onSelectedChange(question.idControl, $event, item.idDetalleTema)">
+                      <ion-select-option *ngFor="let option of question.opciones" [value]="option.idValor">{{
+                        option.valor }}
+                      </ion-select-option>
+                    </ion-select>
+                    <!-- Input Multplelines -->
+                    <ion-textarea *ngSwitchCase="6"
+                      style="font-size: 0.9rem; border: #fff 1px solid; border-radius: 15px; padding: 0.1rem 1rem !important; --background: #fff;"
+                      [formControlName]="question.idControl" placeholder="Escriba su respuesta."
+                      [disabled]="item.isCompleted"></ion-textarea>
+                    <!-- Input Upload Photo -->
+                    <ion-card *ngSwitchCase="8"
+                      style="margin: 0; display: flex; justify-content: center; border-radius: 16px; box-shadow: unset; border: #000 1px solid; border-style: dashed; --background: #fff !important;"
+                      class="ion-padding" (click)="takeOrSelectPhoto(question.idControl, item.idDetalleTema)"
+                      [disabled]="item.isCompleted">
+                      <img [attr.id]="question.idControl" [attr.src]="question.imageUploadUrl" style="width: 120px;">
+                    </ion-card>
+                    <!-- Input Check -->
+                    <ion-select *ngSwitchCase="9"
+                      style="font-size: 0.9rem; min-height: 40px; min-width: 100%; border: #fff 1px solid; border-radius: 15px; padding: 0.1rem 1rem !important; background: #fff;"
+                      [formControlName]="question.idControl" placeholder="Toque para seleccionar"
+                      [disabled]="item.isCompleted" cancelText="Cancelar" okText="Aceptar">
+                      <ion-select-option value="0">No</ion-select-option>
+                      <ion-select-option value="1">Sí</ion-select-option>
+                    </ion-select>
+                  </div>
+                </ion-item>
+              </ng-template>
+            </ion-list>
+
+            <span style="margin: 2rem 1rem; font-size: 0.75rem;">* Obligatorio</span>
+
+            <ion-button expand="block" mode="ios" class="form-button"
+              [disabled]="item.isCompleted || item.isSaveLoading" (click)="onSaveAnswers(item.idDetalleTema)">
+              {{ item.isCompleted ? 'Guardado' : (item.isSaveLoading ? 'Guardando' : 'Guardar') }}
+              <ion-spinner name="crescent" style="margin-left: 1rem;" *ngIf="item.isSaveLoading && !item.isCompleted">
+              </ion-spinner>
+            </ion-button>
+          </div>
+        </ion-accordion>
+      </ng-template>
+    </ion-accordion-group>
+
+    <!-- Formulario normal asociado a PDV -->
+    <ng-template ngFor let-item [ngForOf]="questionNormalList">
+      <div slot="content"
+        style="border: 1px #f2f2f2 solid; margin-top: 1rem; border-radius: 1rem; background: #f2f2f2 !important;"
+        *ngIf="!isWorkDayFormSelected">
+        <ion-list style="padding: 0 !important; margin-top: 1rem; background: #f2f2f2 !important;">
+          <ng-template ngFor let-i="index" let-question [ngForOf]="item.campos">
+            <ion-item lines="none" class="item-background-color" *ngIf="question.visible">
+              <ion-label class="form-title" style="color: #06192b !important;" position="stacked">
+                {{ question.nombreCampo | titlecase }}
+                <span *ngIf="question.obligatorio"> * </span>
+              </ion-label>
+
+              <div style="width: 100%; margin: 1rem 0;" [ngSwitch]="question.idTipoCampo">
+                <!-- Input Text / Numeric -->
+                <ion-input
+                  *ngSwitchCase="question.idTipoCampo == 1 || question.idTipoCampo == 3 ? question.idTipoCampo : ''"
+                  class="form-input" [type]="question.idTipoCampo == 1 ? 'text' : 'number'"
+                  placeholder="Escriba su respuesta" [formControlName]="question.idControl">
+                </ion-input>
+                <!-- Input Date -->
+                <ion-input *ngSwitchCase="2" locale="es-ES" class="form-input" placeholder="Toque para seleccionar"
+                  [id]="question.idControl" [formControlName]="question.idControl" readonly>
+                </ion-input>
+                <ion-modal #modal keepContentsMounted="true" [trigger]="question.idControl" *ngSwitchCase="2">
+                  <ng-template>
+                    <ion-header>
+                      <ion-toolbar>
+                        <ion-title>{{ question.nombreCampo | titlecase }}</ion-title>
+                        <ion-buttons slot="end">
+                          <ion-button style="--color: #844f92 !important;" (click)="modal.dismiss()">
+                            <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+                          </ion-button>
+                        </ion-buttons>
+                      </ion-toolbar>
+                    </ion-header>
+                    <ion-content class="ion-padding">
+                      <ion-datetime
+                        style="--background: #fff !important; --ion-color-base: #844f92 !important; padding: 1rem 0rem;"
+                        locale="es-ES" presentation="date"
+                        (ionChange)="onChangeDate($event, question.idControl); modal.dismiss();">
+                      </ion-datetime>
+                    </ion-content>
+                  </ng-template>
+                </ion-modal>
+                <!-- Input Check Yes or Not -->
+                <ion-item style="width: 60%;" lines="none" *ngSwitchCase="4">
+                  <ion-label style="font-size: 0.9rem; font-family: Lato;">No</ion-label>
+                  <ion-toggle mode="ios" style="--background-checked: #8fc886 !important;"
+                    [formControlName]="question.idControl"></ion-toggle>
+                  <ion-label style="font-size: 0.9rem; font-family: Lato; padding-left: 1rem;">Sí
+                  </ion-label>
+                </ion-item>
+                <!-- Input Optional Multiple -->
+                <ion-select
+                  *ngSwitchCase="question.idTipoCampo == 5 || question.idTipoCampo == 7 ? question.idTipoCampo : ''"
+                  style="font-size: 0.9rem; min-height: 40px; min-width: 100%; border: #fff 1px solid; border-radius: 15px; padding: 0.1rem 1rem !important; background: #fff;"
+                  [formControlName]="question.idControl" [multiple]="question.idTipoCampo == 7 ? true : false"
+                  [interfaceOptions]="customAlertSelectOptions" interface="alert" placeholder="Toque para seleccionar"
+                  cancelText="Cancelar" okText="Aceptar"
+                  (ionFocus)="customAlertSelectOptions.header = question.nombreCampo"
+                  (ionChange)="onSelectedChange(question.idControl, $event, undefined)">
+                  <ion-select-option *ngFor="let option of question.opciones" [value]="option.idValor">{{
+                    option.valor }}
+                  </ion-select-option>
+                </ion-select>
+                <!-- Input Multplelines -->
+                <ion-textarea *ngSwitchCase="6"
+                  style="font-size: 0.9rem; border: #fff 1px solid; border-radius: 15px; padding: 0.1rem 1rem !important; --background: #fff;"
+                  [formControlName]="question.idControl" placeholder="Escriba su respuesta."></ion-textarea>
+                <!-- Input Upload Photo -->
+                <ion-card *ngSwitchCase="8"
+                  style="margin: 0; display: flex; justify-content: center; border-radius: 16px; box-shadow: unset; border: #000 1px solid; border-style: dashed; --background: #fff !important;"
+                  class="ion-padding" (click)="takeOrSelectPhoto(question.idControl, undefined)">
+                  <img [attr.id]="question.idControl" [attr.src]="question.imageUploadUrl" style="width: 120px;">
+                </ion-card>
+                <!-- Input Check -->
+                <ion-select *ngSwitchCase="9"
+                  style="font-size: 0.9rem; min-height: 40px; min-width: 100%; border: #fff 1px solid; border-radius: 15px; padding: 0.1rem 1rem !important; background: #fff;"
+                  [formControlName]="question.idControl" placeholder="Toque para seleccionar" cancelText="Cancelar"
+                  okText="Aceptar">
+                  <ion-select-option value="0">No</ion-select-option>
+                  <ion-select-option value="1">Sí</ion-select-option>
+                </ion-select>
+              </div>
+            </ion-item>
+          </ng-template>
+        </ion-list>
+
+        <span style="margin: 2rem 1rem; font-size: 0.75rem;">* Obligatorio</span>
+
+        <ion-button expand="block" mode="ios" class="form-button" [disabled]="isSaveNormalFormLoading"
+          (click)="onSaveNormalFormAnswers()">
+          {{ !isSaveNormalFormLoading ? 'Guardar' : 'Guardando' }}
+          <ion-spinner name="crescent" style="margin-left: 1rem;" *ngIf="isSaveNormalFormLoading">
+          </ion-spinner>
+        </ion-button>
+      </div>
+    </ng-template>
+
+  </form>
+
+</ion-content>

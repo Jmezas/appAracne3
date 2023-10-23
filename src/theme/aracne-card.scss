@@ -1,0 +1,44 @@
+.aracne-card {
+    color: var(--aracne-dark-primary);
+
+    .card-status {
+        &-SYNC {
+            color: var(--aracne-green-primary);
+        }
+        &-INSERTED {
+            color: var(--aracne-warning);
+        }
+    }
+    .card-container-image {
+        width: 50%;
+        overflow: hidden;
+        max-height: 110px;
+        min-height: 110px;
+        border-radius: 8px;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+        &:nth-child(2n) {
+            margin-left: 10px;
+        }
+    }
+    .container-not-image {
+        background: #ECF0F6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icon-not-image {
+            color: var(--aracne-footer-text);
+            font-size: 3.5rem;
+        }
+    }
+    .row-information {
+        color: var(--aracne-dark-primary);
+        display: flex;
+        align-items: center;
+        .icon {
+            margin-right: .5rem;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+<app-header-modules [moduleTitle]="'TrackerGPS'" [btnBack]="true" [buttonsHeader]="IconsHeaderMain">
+</app-header-modules>
+
+<ion-content>
+  <!-- Area del mapa -->
+</ion-content>
+
+<ng-template #IconsHeaderMain>
+  <ion-buttons slot="end">
+    <app-tracker-status></app-tracker-status>
+    <ion-button (click)="presentPopover($event)" shape="round"><ion-icon name="ellipsis-vertical"></ion-icon></ion-button>
+    
+  </ion-buttons>
+</ng-template>
+
+<!-- MEnu lateral derecho -->
+<ion-popover  #popover [isOpen]="isOpen" (didDismiss)="isOpen = false">
+  <ng-template>
+    <ion-list>
+      <ion-item button *ngFor="let item of listOptions" (click)="menuOptionSelected(item.event)">
+        <ion-label>{{item.text}}</ion-label>
+      </ion-item>
+    </ion-list>
+  </ng-template>
+</ion-popover>

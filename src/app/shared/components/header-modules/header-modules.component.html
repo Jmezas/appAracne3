@@ -1,0 +1,59 @@
+<ion-header>
+  <div id="intenetConnectionHeaderBox" style="display: none;" class="internet-connect">
+    <span>Sin conexión a internet</span>
+  </div>
+
+  <ion-toolbar>
+    <!-- Boton de navegacion -->
+    <ion-buttons *ngIf="btnDrawerMenu" slot="start">
+      <ion-button (click)="openNavbar()">
+        <img [attr.src]="headerMenu" alt="">
+      </ion-button>
+    </ion-buttons>
+
+    <!-- Boton de retorno -->
+    <ion-buttons *ngIf="btnBack" slot="start">
+      <ion-back-button defaultHref="main" text="Volver" mode="ios"
+        style="--background-hover: unset; --icon-font-size: 1.5rem; --icon-padding-end: 0.5rem; font-family: Lato; --color: #844f92 !important;">
+      </ion-back-button>
+    </ion-buttons>
+
+    <!-- Boton Cerrar modal -->
+    <ion-buttons *ngIf="btnCloseModal" slot="start">
+      <ion-button mode="ios" (click)="closeModal()"
+        style="--background-hover: unset; --icon-font-size: 1.5rem; --icon-padding-end: 0.5rem; font-family: Lato; --color: #844f92 !important; text-transform: capitalize;"><ion-icon
+          style="font-size: 1.5rem;
+        padding-right: 0.2rem;" name="chevron-back-outline"></ion-icon><span
+          style="color: inherit !important; font-size: 17px">Volver</span></ion-button>
+    </ion-buttons>
+
+    <!-- Boton de retorno para main aracne3 --> 
+
+    <!-- Titulo del modulo -->
+    <div style="display: flex; flex-direction: row; align-items: center; margin-inline: 1rem"
+      [ngStyle]="{'justify-content': btnBackMain ? 'space-between': 'end'}">
+      <ion-img [src]="backPage" *ngIf="btnBackMain" (click)="onNavigationMain()" style="color: #fff !important; filter: invert(100) sepia(1) !important;"></ion-img>
+      <div style="display: flex; flex-direction: row; align-items: center;">
+        <label style="font-size: 1.2rem; font-weight: 500; margin-inline: 1rem; color: #fff;">{{moduleTitle | titlecase}}</label>
+        <ion-icon id="internetConnectionCampaign" name="radio-button-on-outline"
+          style="color: #8fc886 !important;"></ion-icon>
+      </div>
+    </div>
+
+    <!-- Botones de cada modulo -->
+    <ng-container *ngTemplateOutlet="buttonsHeader">
+    </ng-container>
+
+    <!-- BTN Search bar -->
+    <ion-buttons slot="primary" *ngIf="searchBarConfig">
+      <ion-button (click)="toggleSearchBar()">
+        <ion-icon slot="icon-only" name="search-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <div class="container-searchbar" *ngIf="isOpenSearchBar && searchBarConfig" [@inOutAnimation]>
+    <ion-searchbar mode="ios" animated="true" [placeholder]="searchBarConfig.placeholder" debounce="1000"
+      (ionChange)="onSearchChange($event)"></ion-searchbar>
+  </div>
+</ion-header>

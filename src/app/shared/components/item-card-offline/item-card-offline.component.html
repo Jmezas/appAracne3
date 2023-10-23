@@ -1,0 +1,9 @@
+<ion-card>
+  <ion-card-content>
+    <ion-label *ngIf="listLabels">
+      <p *ngFor="let label of listLabels" class="row-card-content">
+        <span class="ion-padding-end">{{label}}</span> <span>{{_itemData[label]}}</span>
+      </p>
+    </ion-label>
+  </ion-card-content>
+</ion-card>

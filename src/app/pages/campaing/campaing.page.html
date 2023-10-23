@@ -1,0 +1,60 @@
+<ion-content>
+  <ion-grid class="container_campaign">
+    <ion-row class="row_loading" *ngIf="loading">
+      <ion-label class="title_loading">{{ process_campaign }}</ion-label>
+      <ion-spinner name="crescent"></ion-spinner>
+    </ion-row>
+
+    <ng-template ngFor let-campaing [ngForOf]="responseCampaings">
+      <ion-row *ngIf="!loading">
+        <ion-col size="12">
+          <ion-card class="ion-padding"
+            (click)="campaing.campaniasList.length == 1 ? selectCampaing(campaing.campaniasList[0].idCampania) : onOpenModalCampaign(campaing.campaniasList)">
+            <img [attr.src]="campaing.logo" style="max-width: 8.125rem;">
+  
+            <ion-item class="ion-margin" lines="none" *ngIf="campaing.campaniasList.length > 1">
+              <ion-label>Pulsa para elegir una campaña</ion-label>
+            </ion-item>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ng-template>
+  </ion-grid>
+
+  <ion-modal [isOpen]="isModalCampaignOpen" [enterAnimation]="enterAnimation" [leaveAnimation]="leaveAnimation" backdropDismiss="false">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons style="position: fixed; right: 0; top: 0.25rem;">
+            <ion-button style="--color: #844f92 !important;" (click)="onCloseModalCampaign()">
+              <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+          <div style="text-align: center;">
+            <ion-title style="font-weight: bold; font-size: 1.2rem;">Elige una campaña</ion-title>
+          </div>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding list-campaign" style="text-align: center;">
+        <img [attr.src]="modalCampaignLogo" style="max-width: 8.125rem;">
+        <ion-list lines="none">
+          <ion-item *ngFor="let item of modalCampaignList" (click)="selectCampaing(item.idCampania)">
+            <ion-label style="font-size: 1rem;">{{ item.paisCampania }}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+</ion-content>
+
+<ion-footer mode="ios" translucent="true" *ngIf="!loading">
+  <ion-grid *ngIf="responseCampaings.length > 0">
+    <ion-row justify-content-center align-items-center>
+      <ion-col size="12" class="ion-padding" (click)="eventCloseSession()">
+        <div class="return_container">
+          <img [attr.src]="returnIcon" class="ion-padding">
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

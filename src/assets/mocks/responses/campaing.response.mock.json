@@ -1,0 +1,1662 @@
+[
+    {
+        "tipoAracne": "Aracne2",
+        "campaniasList": [
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 1,
+                "campania": "AOC",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMSIsIkNBVExHQ2FtcGFuaWEiOiJBcmFjbmUyIiwibmJmIjoxNjQ5Nzc3MTI1LCJleHAiOjE2NDk4NjM1MjUsImlhdCI6MTY0OTc3NzEyNX0.ZOT6lbS039-rDWcn_qhpLzE9zUs88BiNr0IrWt-xQnE"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 2,
+                "campania": "MAKITA",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMiIsIkNBVExHQ2FtcGFuaWEiOiJBcmFjbmUyIiwibmJmIjoxNjQ5Nzc3MTI1LCJleHAiOjE2NDk4NjM1MjUsImlhdCI6MTY0OTc3NzEyNX0.RN1s_vVYRKDdoxGEAD5v5uou0p3WdO_2cN0QVh54Veo"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 3,
+                "campania": "STARBRANDS",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMyIsIkNBVExHQ2FtcGFuaWEiOiJBcmFjbmUyIiwibmJmIjoxNjQ5Nzc3MTI1LCJleHAiOjE2NDk4NjM1MjUsImlhdCI6MTY0OTc3NzEyNX0.40UCnlLe7dCK_0EQIxX0TRbJN8F7jZnjNAey6q2_U8c"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 4,
+                "campania": "KITCHENAID",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNCIsIkNBVExHQ2FtcGFuaWEiOiJBcmFjbmUyIiwibmJmIjoxNjQ5Nzc3MTI1LCJleHAiOjE2NDk4NjM1MjUsImlhdCI6MTY0OTc3NzEyNX0.TNBUxflN54ugVDSQVM6ZYLcoudm8VPvXPLawB1O3eWw"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 5,
+                "campania": "HUAWEI",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNSIsIkNBVExHQ2FtcGFuaWEiOiJBcmFjbmUyIiwibmJmIjoxNjQ5Nzc3MTI1LCJleHAiOjE2NDk4NjM1MjUsImlhdCI6MTY0OTc3NzEyNX0.0jbjPiwTGOjEJf2k6HJWvW_L6nrdhD4aVr0VjVWpX2E"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 6,
+                "campania": "CANDAMENA",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": "https://test.aracnereport.com/AuthLogin.aspx",
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNiIsIkNBVExHQ2FtcGFuaWEiOiJBcmFjbmUyIiwibmJmIjoxNjQ5Nzc3MTI1LCJleHAiOjE2NDk4NjM1MjUsImlhdCI6MTY0OTc3NzEyNX0.h2OkqTNvGCj6z77eFvMraRNiGvlwC67mxgWn6-hp-Xg"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 7,
+                "campania": "ZTE CLARO",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNyIsIkNBVExHQ2FtcGFuaWEiOiJBcmFjbmUyIiwibmJmIjoxNjQ5Nzc3MTI1LCJleHAiOjE2NDk4NjM1MjUsImlhdCI6MTY0OTc3NzEyNX0.5iea6R6GI29bmFm1AZ_6u1HbVLaAUQ_vKc145iuAWMY"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 8,
+                "campania": "MICROSOFT",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiOCIsIkNBVExHQ2FtcGFuaWEiOiJBcmFjbmUyIiwibmJmIjoxNjQ5Nzc3MTI1LCJleHAiOjE2NDk4NjM1MjUsImlhdCI6MTY0OTc3NzEyNX0.V6C7Sk5Sl-RaVHis1qhfE5D0uXgeJM9FotMapIzy-Gs"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 9,
+                "campania": "ZTE MOVISTAR",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiOSIsIkNBVExHQ2FtcGFuaWEiOiJBcmFjbmUyIiwibmJmIjoxNjQ5Nzc3MTI1LCJleHAiOjE2NDk4NjM1MjUsImlhdCI6MTY0OTc3NzEyNX0.qpgiD5kbXhYu_ZnCgkKBcv7J7gL_-kmfRloi7wx56Eg"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 10,
+                "campania": "ASUS",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTAiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.eAkPhS3AM0nF-ogOIi_P-PPkvYWgRr-YxaQZx0AwQpQ"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 11,
+                "campania": "GERMINAL",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTEiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.3FpFVqkf5NKWsO8dWfwi15BDF3Vm8S5JQQ0_FGAUAPs"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 12,
+                "campania": "IMACO",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTIiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.SBbTiqs2cAVcb7XzgPQnFJAZi82t_FDjlsaTrM8L6FM"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 13,
+                "campania": "WHIRLPOOL PERU",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTMiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.7UA7mh7d6xWkABiu468T2-m0XK-Tx5rfzIwgQltT1_g"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 14,
+                "campania": "SANDISK BK",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTQiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.mextUtNyrcV-WVLe6MatUZQCC1aua6yEGt2ipRKn3eg"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 15,
+                "campania": "INTCOMEX",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTUiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.F24Ae51qJiO6qLzT7no-RyacDN3Kw2AbunaRSYjG1_A"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 17,
+                "campania": "WHIRLPOOL HIPERMERCADOS",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTciLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.dQWlX1IiGZkmI_YdQ4G52qeETM74lOx4j1cXM9EvkXY"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 18,
+                "campania": "WHIRLPOOL TRADICIONAL",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTgiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.5PNw4yLgKfwKPQ3bLN4bTgP7p9TzBt7AzOlUJuFfkdM"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 19,
+                "campania": "KITCHENAID MAJORS",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTkiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.N4lnRPxKvm4iQiglinlXdJRvN4ahB6soZgdwLjYMuCE"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 20,
+                "campania": "KITCHENAID SMALL",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjAiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.VW-S-MQe1NHIkfgJVznp_suOtU1DKe9fa_n6I4lWvoM"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 22,
+                "campania": "ZTE ENTEL",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjIiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.WRzVsTidjdTUu-RbCw4jxT61YupLamEg_Gt3g7UO_hE"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 23,
+                "campania": "WHIRLPOOL COLOMBIA",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjMiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.3B3f6RW0OehWhK_Lu1yzW3M0Usy-zoXwBEDoHXYnLMM"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 24,
+                "campania": "SANDISK",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjQiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.3W82AktT9Dy-WPODy7g-SX3rTBJuXiafqbDg_kZJ_BA"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 25,
+                "campania": "ODISSEIAS",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjUiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.12z6E7P-FqAbDIS63c_rUm7Yqj0BOw2xtibjsOX9fRU"
+            },
+            {
+                "lineaNegocio": "Fuerza de Venta",
+                "idCampania": 26,
+                "campania": "CANDAMENA FV",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjYiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.aEel2q-2Dhat75-4L-KXgS0yWGDi97m63yzfvKLonW4"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 27,
+                "campania": "TENNIS",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjciLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.SRtQvnabZaEcz_I5mfYEX6zP62YcA0oqX9Y_qJz6LtY"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 28,
+                "campania": "GAMERS",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjgiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.7vIh7uti5gLcaX3awKG81TlXO1D_zg_eo6EWdOy_wWk"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 29,
+                "campania": "HASBRO CARREFOUR",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjkiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.izBgO8ZP4f7SdfcDIHeZWr40JMdTzLv1u59q4Q9DiRQ"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 30,
+                "campania": "KARCHER CO",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMzAiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.Q0A7SFit18Kx-xR826YCx2UQfbU8idIHJiQdvO0lS1s"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 33,
+                "campania": "TAGUS",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMzMiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.pVJDDd-p5Vm7WP2M8ptYN78ty12qJZeb3jjvLclvM4s"
+            },
+            {
+                "lineaNegocio": "Fuerza de Venta",
+                "idCampania": 34,
+                "campania": "BANKINTER AIR EUROPA",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMzQiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.AZXK_tqzg911QinIDqjjnZxs86eG4fIYeSHdaWXhNq4"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 35,
+                "campania": "LOREAL PERU",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMzUiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.wOaX8w5b19BKMcG-oiebXneRCuGrphGXNrIGqkvTJUk"
+            },
+            {
+                "lineaNegocio": "GPV",
+                "idCampania": 36,
+                "campania": "CANDAMENA GPV",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMzYiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.t8aPK2CUPLcECwyHJZU-UYsWVpMOZqYNdgnvZ6w38MY"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 38,
+                "campania": "ITALCOL",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMzgiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.NLp3gjBqjfc6uVwa1_hQyjAYOC07Y8IlIjVCAkj9jTg"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 39,
+                "campania": "HADA LABO",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMzkiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.wcOqSHkMyrme0uhEjd2S4K1SzpKXertlSvMQ2Bn2hX8"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 40,
+                "campania": "DEMO",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNDAiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.buB6oifs-HmpBhotz23niVmYVX_Cy0FaV4Z-LEDpPPo"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 42,
+                "campania": "IKEA",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNDIiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.4gn9bwTEdv5KjKWaW3lSQ_uuv8y5OBYsU1qikNZ8C34"
+            },
+            {
+                "lineaNegocio": "GPV",
+                "idCampania": 43,
+                "campania": "TRAINING ASUS",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNDMiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.uuTzpgxuSxEBqVbg5VziuJ1Ss5qXD0XBGSVKkUOB56s"
+            },
+            {
+                "lineaNegocio": "Agendamiento",
+                "idCampania": 45,
+                "campania": "FORMADORES",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNDUiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.grxFbL2cPcZMyTy-Zik77iizdywcmXjUzSIwQeJVG8s"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 46,
+                "campania": "KARCHER PERU",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNDYiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.-RIyd0stkotmc3FTbdDii8GFpr-CuZKnke5yEbM1VaQ"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 47,
+                "campania": "GOOGLE MX",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNDciLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.-ELd0_rGYU7KlKDBfbIa-dtaIKbnNzhxS5cKhdpQxP4"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 49,
+                "campania": "LGtodas",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNDkiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9._gLQgmalYSawEA6Wpe1cu_gewJEw_0lkAtKIKZx7X-U"
+            },
+            {
+                "lineaNegocio": "AdHoc",
+                "idCampania": 50,
+                "campania": "MEGASTAR",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNTAiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.ciXPzzNNyL3GPOeSEmQcOmg-XBD_4PFBQAURi39Xemk"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 52,
+                "campania": "ZTE-PE",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNTIiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.NjDQNKLpbca3Xgi4bOQrop52bMFEtdtfxZGBd6tXTrQ"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 53,
+                "campania": "ALTADIS",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNTMiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.BTHW39WjAEfysba4M7oMPFJADMWJdJoEjwNDvBwvovI"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 54,
+                "campania": "SCANDINAVIAN - CAFECREAM",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNTQiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.MfbXhIQJo9ruLbxTtTYhHNER-2desatnPmFE5VyLtWU"
+            },
+            {
+                "lineaNegocio": "Promotoría LG",
+                "idCampania": 55,
+                "campania": "AC",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNTUiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.6ZXzB0kdXHtwJQ6a0T2yuXUkHF5cVtLsTHAamlQgtpg"
+            },
+            {
+                "lineaNegocio": "Promotoría LG",
+                "idCampania": 56,
+                "campania": "Mixto",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNTYiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.COisyETL1nNyrMp2mHZe5Nc_H0jrA29it-ItmBELpkg"
+            },
+            {
+                "lineaNegocio": "Promotoría LG",
+                "idCampania": 57,
+                "campania": "HA",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNTciLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.LqxEjL0rKjUbF0pyRC8thpk6aS3qNRmmVoC-zZAEYOw"
+            },
+            {
+                "lineaNegocio": "Promotoría LG",
+                "idCampania": 58,
+                "campania": "IT",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNTgiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.qcMhZBv3fKD_ic-r26A8xHRmb--RJHeKs41qul7pPVU"
+            },
+            {
+                "lineaNegocio": "Promotoría LG",
+                "idCampania": 59,
+                "campania": "HE1",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNTkiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.wAX0wgjlQSt029wVMwWNxTGta_CoxNK1YRdEI3OhF9A"
+            },
+            {
+                "lineaNegocio": "Promotoría LG",
+                "idCampania": 60,
+                "campania": "HE2",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNjAiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.jvRkPRO_wYhgcxIcpVugjGHnWTTVfc0KojNqJH_W1ys"
+            },
+            {
+                "lineaNegocio": "Promotoría LG",
+                "idCampania": 61,
+                "campania": "MC",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNjEiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.xa1pTWlwxr8J9rqelR8tZCiQW56DNLQ253vgyXUmO-4"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 62,
+                "campania": "PASTAS GALLO",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNjIiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.M-7e1-ExGNmSyDML72_Qegne_p06eVSLWfQcN-s2se0"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 63,
+                "campania": "WOWWEE",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNjMiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.claFScutFcGGp1n13ODDOWHiPRkOKrQoTYl6ZHPmG9M"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 64,
+                "campania": "NOS",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNjQiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.JY2b0-fNWJjJj6z0jgU84pJ3VApEEElX7lwpJrzA2Cw"
+            },
+            {
+                "lineaNegocio": "Promotoría LG",
+                "idCampania": 65,
+                "campania": "AC Refuerzo",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNjUiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.m9gxgpiyMG-zW7DO2J66yKx8LpkEEPSyZbeZM34Aj2w"
+            },
+            {
+                "lineaNegocio": "Promotoría LG",
+                "idCampania": 66,
+                "campania": "HA Refuerzo",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNjYiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.mI533dbYEpo5T4TMdVTqZGKExbH5p4fmB2UXLNn3Qpk"
+            },
+            {
+                "lineaNegocio": "Promotoría LG",
+                "idCampania": 67,
+                "campania": "MC Refuerzo",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNjciLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.hb8BHjJf30liQMbETVM4GAs2eBCnde4agb_IxevgkEg"
+            },
+            {
+                "lineaNegocio": "Promotoría LG",
+                "idCampania": 68,
+                "campania": "Estructura",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNjgiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.YQ_WJU2F0z2nubJ5fpLT4Hdnm3TVKgWME0IXrjkiym4"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 70,
+                "campania": "CARREFOUR",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNzAiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.cjxwRd7S9skgOhKJdKMxxqRG8Sx4pAUd8J7ApUQRwkk"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 71,
+                "campania": "BANKINTER",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNzEiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.1l5SKjfvdQP37DMDTX5YcQMikfkSiwQPlIPMkSz42vA"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 72,
+                "campania": "WHIRLPOOL competencia",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNzIiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.pSx_fKoiPaJS0ZFGr8760J0YRK4r_QMBPzK1TwakDk4"
+            },
+            {
+                "lineaNegocio": "GPV",
+                "idCampania": 73,
+                "campania": "GLOBAL BLUE",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNzMiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.8ZRyjKMXb6xx7rDEZnN667pJioe0PknMutHA8bdGOHc"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 74,
+                "campania": "STOKKE",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNzQiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9._GEq5FoTuNja-lrtXIZAUmhLn_qbAgAlIizk8nOEzRA"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 76,
+                "campania": "SMU",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNzYiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.kUB8wvO1ltmw973MQnE88d79dhsBq2aWdnldPec1zi0"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 77,
+                "campania": "BOSCH",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNzciLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.M5WOl0Hh-kqR-_b9PJMqoCNLc9SlwNmcIDJGhZEl2ZI"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 78,
+                "campania": "LA ROCHE",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNzgiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.c8DpHtRxrKoP0go1m79-DkJIWYme4r3ebYY-weOOUwA"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 79,
+                "campania": "MAYBELLINE",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiNzkiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.ysajeZiHj7Koh5q4S8USBSPNKuFt3lIO1kDEuCscTMw"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 81,
+                "campania": "DEMO COMERCIAL",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiODEiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.t66vZb4JwbWF85iy831tXFn7IE260mzBBX7VNpgKWTM"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 82,
+                "campania": "WTF",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiODIiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.gH1uGHdx8WxXNRIX4FyVt1L6YlMFRG1bugnAkNK6gfA"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 83,
+                "campania": "HISENSE",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiODMiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.2PSSIquxcoCtkD7rk7L-GDS585fQfD9i1kpgjF9p_Tg"
+            },
+            {
+                "lineaNegocio": "Promotoría LG",
+                "idCampania": 85,
+                "campania": "CANDAMENA LG",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiODUiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.mz4413laweuvUWqb7umWwMGOYKdqE3PdslcjgfF1tCA"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 86,
+                "campania": "KITCHENAID PERU",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiODYiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.swxlUyYFHLOHU3ghvN8iAb6wacLmjZUsNZ-cbkLAKWY"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 91,
+                "campania": "IROBOT",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiOTEiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.Q9nuovGdunydw2Nu5zM2VwbmdRcgKxUEYPjgU-oUVl4"
+            },
+            {
+                "lineaNegocio": "GPV",
+                "idCampania": 93,
+                "campania": "MAHOU",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiOTMiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.L8kDCpkXL6y0oAq2OznDFcm57WZDUpoXHVneHDoWQjw"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 94,
+                "campania": "SYMPHONY",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiOTQiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.ZyaZsxuU5ScCT0z8SfU8KB1vwQOPJ1RJPxiin8aGW-s"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 98,
+                "campania": "GOOGLE",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiOTgiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9.IgjVd61RPxxcpyLP3QjyTYYCvz79OklvOUsfyhNkfZQ"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 99,
+                "campania": "LENOVO",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiOTkiLCJDQVRMR0NhbXBhbmlhIjoiQXJhY25lMiIsIm5iZiI6MTY0OTc3NzEyNSwiZXhwIjoxNjQ5ODYzNTI1LCJpYXQiOjE2NDk3NzcxMjV9._JiaHCgShqzV1wogo4tFKKQMcxWeNp048OAIR8rcN18"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 102,
+                "campania": "DURACELL",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTAyIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.pmd5pC6mU0ZMePpE8v_8D6EERE_tALxl4nsNFLmKXSg"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 103,
+                "campania": "WIZINK",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTAzIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.eH-9eO7phymMVo4eD_quHNb_L84RgaJQUjxjaVcYD6g"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 105,
+                "campania": "MM-CAIXABANK",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTA1IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.CinJBxD00LkMa8xoeD15jE93ShDIzLulcdqUNvRlhV4"
+            },
+            {
+                "lineaNegocio": "GPV",
+                "idCampania": 106,
+                "campania": "ANDROID ONE",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTA2IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.lxOYrp9CBfWlp8E6-klWwyHLeDfBZCyuFgfNYf7pVXc"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 107,
+                "campania": "PERNOD RICARD",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTA3IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.QHjDxiJDVcE0FpNkHSiTMu9xu8tREaagAnVaCDa-7hI"
+            },
+            {
+                "lineaNegocio": "GPV",
+                "idCampania": 108,
+                "campania": "NESPRESSO",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTA4IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.c1UF-srlk5nGXT2JkTR5tO_3122_LBDu_VupizDju3w"
+            },
+            {
+                "lineaNegocio": "GPV",
+                "idCampania": 109,
+                "campania": "AMAZON AÇAI",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTA5IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.btlCKTGffY-1bRPIk5s3q3Am-NibRNJ5VYaXm90eLb0"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 111,
+                "campania": "PERNOD RICARD (Promotores)",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTExIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.2h1hJHf6ut5d-lQ3mVprBbBTRIh_F_k3DYSc_xa-bbA"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 113,
+                "campania": "DURACELL CARREFOUR",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTEzIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.whPIMyUr1YiSgYQHbpPdX4yxJHjUE_BVplU1OnPpNHQ"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 117,
+                "campania": "PONTO DE VENDA",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTE3IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.nN0MV1TWRuEALJF0749nRK25UOPCIo5Bsb_dRejnz5w"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 118,
+                "campania": "FERRERO",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTE4IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.nGX_pQpn4MwfRmYAxsxFTil4WsUwkT2zH2aoN8OCFu4"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 119,
+                "campania": "AVON",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTE5IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.VEMfkfP5M99lAG1ZPyaCfHW26uNXvWP23WPFE3GFjw8"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 120,
+                "campania": "OKI",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTIwIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.TmKVaLGsfkhho5Y9ea3rVdTq6FToK-o2Nh6ZT-rucgA"
+            },
+            {
+                "lineaNegocio": "Promotoría LG PERU",
+                "idCampania": 121,
+                "campania": "LG PERU",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTIxIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.ZEWBCKJboPwXQoCui4vRgseVItcjECNnknua-HqzWkQ"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 122,
+                "campania": "SVENSON",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTIyIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.-dKwLSxIVuUW8jfDCP4GuxkmtkVuPX8c3O13_8neJTw"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 123,
+                "campania": "MEDIFARMA",
+                "bbddCampania": null,
+                "idRol": 2,
+                "rol": "PROMOTOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjIiLCJJZENhbXBhbmlhIjoiMTIzIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.bfKtkIhE0ow_iXwb5CZGBODaG_SrcyqxSwpnv0ruoPE"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 124,
+                "campania": "SANOFI",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTI0IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.5edAw6O9S31w4Dxp2C3fzlyk_dJ6EX5WVKoXEA6Cfec"
+            },
+            {
+                "lineaNegocio": "GPV",
+                "idCampania": 127,
+                "campania": "MAHOU 2019",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTI3IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.J-gZPiIHGPeX7VothiWZACwD3uN96mEa5lOW0lwq7nY"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 128,
+                "campania": "CARREFOUR TARJETAS",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTI4IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.OBqR1JrmbpO_s2vlRt1WfMaL2BBfq5n7BU-5h54BxXM"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 129,
+                "campania": "VISA NET",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTI5IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.IS2OQJ4gKI09uGyIUGz4aXIehYKP-Nq_8wUurxRjFTM"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 130,
+                "campania": "FNAC",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTMwIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.xavTztK-3-MVpCDNP4qNMoyo-hZH33yUE5v4nXXyZKU"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 132,
+                "campania": "UCI",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTMyIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.dQi_ksvJHz1QC-lwX0hiUNg8rwKhjpDazAlZnQBlwNs"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 133,
+                "campania": "VIRGIN MM",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTMzIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.5zN-YD3SrErRLSuCBkMdI9jvFObgrMPNIINPwSeNkAg"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 134,
+                "campania": "SMALL",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTM0IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.ivrwDP8EWzwVaMlGE64WJCIJxk5HdHrK3taso_eNnpE"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 135,
+                "campania": "SALESLAND",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTM1IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.1PurPaelD3qKrydqDXcTZvcw1UJoQsmao4qfqp49kBw"
+            },
+            {
+                "lineaNegocio": "GPV",
+                "idCampania": 136,
+                "campania": "LABORATORIOS VIÑAS",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTM2IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.Oq4gAPPsjODaVx2ZIfbFsMjSaOhGSnjCKW00mhfg0Jo"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 137,
+                "campania": "TPV-UP",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTM3IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.APvb9TWun1qzUg-adrmP9_QInGBa16rRz_ZdrPDh2D4"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 138,
+                "campania": "WALL STREET ENGLISH",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTM4IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.UGWdUEcg6MtOG2qau5l_e0365ajyfvepIfsLkM7LGcE"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 139,
+                "campania": "BELMONT TRADING",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTM5IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.5RSCeaAxwRHrKxcCRRYOjgkWSjY0ZvmyTRUtvfjZQKI"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 140,
+                "campania": "SIIGO",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTQwIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.3z9X1NGow7_TnXxIbXbfTgMVDJW-NRdOC-lYcVbFE94"
+            },
+            {
+                "lineaNegocio": "GPV",
+                "idCampania": 142,
+                "campania": "VISA",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTQyIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.m5-R0vLD_OZ7uYUheP-oNxemlwcSNvQT-gytL6QbXow"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 143,
+                "campania": "BILLIONHANDS",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTQzIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.DAbxSZKVqBwrZMtfDCRiKrik3EQK-dT51m-aL72ewt4"
+            },
+            {
+                "lineaNegocio": "GPV",
+                "idCampania": 145,
+                "campania": "CANON GPV",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTQ1IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.mn1EVLPjonZBuRGkx26gKUCox34_oj7zlzHZxsbBfx4"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 146,
+                "campania": "CANON",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTQ2IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.FwJc4ryDlnMdvDW-sbnk7czJ7m57c0q86Yzz7zK1kKw"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 148,
+                "campania": "BCLUBBER",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTQ4IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.WFglMtUtigdPIcSq8ffLFb2FSith0JtIJ3gvlU7AW2I"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 151,
+                "campania": "JMD",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTUxIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.kma2ntjAStBODNVIICLK6ZNKKfFaVmGH5fdj4KFE4FI"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 152,
+                "campania": "XIAOMI",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": "https://test.aracnereport.com/AuthLogin.aspx",
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTUyIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.uWGmpmygzmQxiS3WmWKba9gInkCGbK8DV8LpLkAxPpo"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 156,
+                "campania": "HASBRO ALCAMPO",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTU2IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.oSvVzGz-YMS2Z4F-8ITJOPbFNC-Fw9QhkuQfNN0xmf8"
+            },
+            {
+                "lineaNegocio": "GPV",
+                "idCampania": 160,
+                "campania": "VISA UNICRE",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTYwIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.QdTNekE7RI-zqA4zq5DQ0wf2wwj-09INIZauI59ZE14"
+            },
+            {
+                "lineaNegocio": "GPV",
+                "idCampania": 162,
+                "campania": "XIAOMI GPV",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTYyIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.HdkJj5xj9E_8T0elgw9tsSvhDWbgxXUuU264jzvaQWs"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 167,
+                "campania": "REPSOL",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTY3IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.LHQ6RTEz2SSAWuEQw-ERAKQXx-nsZYKt0krZG6FYk94"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 168,
+                "campania": "INTRUM",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTY4IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.gMdGTjRXBx83qHOyTC8GsGRUI9ScgM8zTBLEOWbNeHU"
+            },
+            {
+                "lineaNegocio": "GPV",
+                "idCampania": 170,
+                "campania": "XIAOMI FORMADORES",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTcwIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.rFL4H_pBi6HPasDqO4m9E-2xCC0D_ncQJ7RRaKC9Sw0"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 171,
+                "campania": "NESTLE STARBUCKS",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTcxIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.3N3VdbL7AaY_QBBoNXwie_DiCvBkjMS2iYfjDJ7M-Og"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 172,
+                "campania": "SALESLAND INC",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTcyIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.9aiUbjfYWz-tLaVubAO___BCr7aySBW2G5H_fE9q3zQ"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 173,
+                "campania": "BAT",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": "https://test.aracnereport.com/AuthLogin.aspx",
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTczIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.d6yNd5YiATWbDE9mYnscAb_0rsPEwqupMNE4OFl-jNc"
+            },
+            {
+                "lineaNegocio": "GPV",
+                "idCampania": 174,
+                "campania": "GESTIÓN TAREAS",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTc0IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.ZBgaXGudahhroQTP20SCSgIWxXIqMBQ1vrjVUyL0ij8"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 175,
+                "campania": "NORDIC",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTc1IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.gje49PJ15GwLMvxqd2A9U2KPkDtMEAPWYmLrZYdd_vo"
+            },
+            {
+                "lineaNegocio": "GPV",
+                "idCampania": 178,
+                "campania": "MONDIAL RELAY",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTc4IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.gVzh9-sRn3x8wK0v-Jph1-KeQakmnlcgMNMftlbNEyI"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 179,
+                "campania": "INSPECCIONES LALIGA",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTc5IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.R_lD1yDAQryJiRHxoBF9dEsQkfntk2hhhdAE4gAPyCE"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 180,
+                "campania": "IBERDROLA",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTgwIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.0u9nClzyiHTGvCloevH7rGfJispfUYfd1gPR5WLqI10"
+            },
+            {
+                "lineaNegocio": "GPV",
+                "idCampania": 181,
+                "campania": "SVENSON EVENTOS",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTgxIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.vAPZnCmNTQMNwQ_bRlW_QhzUeML4gz4lUtPDwSoYhw8"
+            },
+            {
+                "lineaNegocio": "GPV",
+                "idCampania": 182,
+                "campania": "PERNOD RICARD MERCHAND",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTgyIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.PiStzuLirsA3BiFyQbVLv0pUplAh1bn72379qaDULao"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 194,
+                "campania": "LOREAL CHILE",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTk0IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.kp21wpZOUZNIsibAd5T77OpLP8Iy1gMrtuErkYtrRyQ"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 195,
+                "campania": "CHILQUINTA CAPTACIÓN",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMTk1IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.Ct7AHYWe1FoyysgQHqC9uUS2hEthZY8fQ-Wwmw73zwc"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 208,
+                "campania": "CARREFOUR CAPTACIÓN CLUB",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjA4IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.OqexkxIvLtVJAQZB85qGRCcBF-uB-TYz3h1cIBFh8k0"
+            },
+            {
+                "lineaNegocio": "CheckList",
+                "idCampania": 209,
+                "campania": "SALESLAND LEAD",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjA5IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.fH95EHBbpb70Xl1wDiP8_oCc_mmGJKyIfoXyt-XCB5U"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 212,
+                "campania": "WIZINK CEPSA",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjEyIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.GMSIWBJr2EE6E7z4s0FgkeOcT-m-CKwh4TsrJPYnXdE"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 213,
+                "campania": "CABIFY",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjEzIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.ILbBIY9k1Wdzd-ZnxjEWmfkzGYLoj_BSdgYGdOBMaNI"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 214,
+                "campania": "KTAL",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjE0IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.moNi6zHt0OE5dN_BL18IWl4iYuuz7wEOtG3i6LF7AbU"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 215,
+                "campania": "PLANETA",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjE1IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.YaWWS8MSReFBy090sudJk9EvGmANTtAjxbFjzXKoh9E"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 216,
+                "campania": "BRAND",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjE2IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.os8fmeg5chtXxR0TBWwhWA7DGpbDgbO8kIf0U9xsHDc"
+            },
+            {
+                "lineaNegocio": "GPV",
+                "idCampania": 219,
+                "campania": "PERNOD RICARD MERCHAND 2021",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjE5IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.YBc0LovHXo7ICS6sgrkpxdqYd1o7Yt2_8DTB2oUdF_Q"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 225,
+                "campania": "CAIXABANK - IKEA",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjI1IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.Ko26SMxtphdhQbNQOHfE2aEBrdmMk7zVSNjdxWU0MsE"
+            },
+            {
+                "lineaNegocio": "GPV",
+                "idCampania": 226,
+                "campania": "AMAZFIT",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": "https://test.aracnereport.com/AuthLogin.aspx",
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjI2IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.T98HRmFWbisIWZt53ZdGPbSGy1rfJi4NZORKEyjSUKE"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 230,
+                "campania": "MEDIAPRO",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjMwIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.9pZW4lQWKV_u-pyJh-CwxIupeFT0Zmlsz2cRVIi5q2o"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 231,
+                "campania": "CBD",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjMxIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.swCx2PfyyGRPwITHGraCGdIfxr63P6HR2FGQ9PqMKUQ"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 232,
+                "campania": "UNIDAD EDITORIAL",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjMyIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.6aFJyttFC6DijO0zYEXKrgiF9xIr_VfpBnKa5sX7nLo"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 233,
+                "campania": "GUUK",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjMzIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.54eJv0C0KTWoZzKfiw_Vw6hBGRtylUWpjQoNncu1P50"
+            },
+            {
+                "lineaNegocio": "Administrativo",
+                "idCampania": 234,
+                "campania": "SALESLAND INC COLOMBIA",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjM0IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.4pmjgZH1GoJMJEiCAZdDVD27jank18xdDWai0PpY-F8"
+            },
+            {
+                "lineaNegocio": "GPV",
+                "idCampania": 240,
+                "campania": "INTEL",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjQwIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.1pVFcU-MYOr8OzJJqAx9QIKTqFqZA6Clcxupap3b0G4"
+            },
+            {
+                "lineaNegocio": "GPV",
+                "idCampania": 245,
+                "campania": "XIAOMI ASD",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjQ1IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.KxhK4yuy6dlOCKTdGnUktNrMcfwP4vBQl76P9G0pu9g"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 246,
+                "campania": "GESTYDE",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjQ2IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.yprilI1rMtd843GrFRE_rPatoPcQ6Rgchso0o-BFZb0"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 247,
+                "campania": "HELLO PLANT",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjQ3IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.5L6j_qMCQ5QKthaA1N63qTpiS7LEivPoHgvX81H9kFE"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 250,
+                "campania": "EQUIFAX CHILE",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjUwIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.j-4YWNX7pLabD2-SbgnRyFMoJ9Chxb-KExfRHP1D6PU"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 251,
+                "campania": "CANDAMENA PRB",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjUxIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.pOA9cKJI1vC8HGQm7VbdNL40i3qWdVIB_f9RmqRrWdw"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 252,
+                "campania": "XIAOMI PROMOTORES",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjUyIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.50RihtPDNDvo_4JZi-aMNAZ2__TjiwJZINHWMYRRSHY"
+            },
+            {
+                "lineaNegocio": "GPV",
+                "idCampania": 254,
+                "campania": "ASUS MERCHANDISING",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjU0IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.L5z0oFoVG_5tU3BqhgR-m7Kr4cht5qwfaPXjS_vOJs0"
+            },
+            {
+                "lineaNegocio": "GPV",
+                "idCampania": 255,
+                "campania": "VISA - UNICRE 2022",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjU1IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.vhp7NxzunyFxrEiBY7WUs3ztwdkiDIwhpcJ1I64MUi0"
+            },
+            {
+                "lineaNegocio": "GPV",
+                "idCampania": 258,
+                "campania": "ASUS TRAINING",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjU4IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.VoLeQVez6I6Qib-xpTD7Zfa7dX43TAYxgjrKRY0oObM"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 271,
+                "campania": "MARCA",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjcxIiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.7lW8vkZtlB5Dxq1oryhqZACPGm6NhPdpGek55G1cZtA"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 275,
+                "campania": "GOOGLE CHROMEBOOK STORE",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjc1IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.tMHbzuDjSkC7gR1dOS9jOazr8V1Njp3P5MwcD6ieNGw"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 277,
+                "campania": "CABIFY DRIVERS",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjc3IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.zBFidamVG6WCEYRvtX9OqQuInBoQ7vq-ds-199vHz_Q"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 289,
+                "campania": "WIZINK CEPSA VENTA DIRECTA",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjg5IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.fDPHJsM6IrfgxQjdkFC0hZ8IhTbWTrhdMrWF6zxtzCM"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 294,
+                "campania": "TUAWA",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjk0IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.Q3HzciNIynUULHBq8Fi4NsmrBkEUWNg97694yZY1IZM"
+            },
+            {
+                "lineaNegocio": "Promotoría",
+                "idCampania": 296,
+                "campania": "PURE",
+                "bbddCampania": null,
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": null,
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjk2IiwiQ0FUTEdDYW1wYW5pYSI6IkFyYWNuZTIiLCJuYmYiOjE2NDk3NzcxMjUsImV4cCI6MTY0OTg2MzUyNSwiaWF0IjoxNjQ5Nzc3MTI1fQ.81BVtalsHdfXOhmCp-8H_BLL9SydWLitNSLE6SKRjwU"
+            }
+        ]
+    },
+    {
+        "tipoAracne": "Aracne3",
+        "campaniasList": [
+            {
+                "lineaNegocio": "Aracne 3.0",
+                "idCampania": 253,
+                "campania": "Demo",
+                "bbddCampania": "A3_COL_DEMO",
+                "idRol": 1,
+                "rol": "ADMINISTRADOR",
+                "urlSiteCampania": "IndexColombia",
+                "tokenUserConfig": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZFJvbCI6IjEiLCJJZENhbXBhbmlhIjoiMjUzIiwiQ0FUTEdDYW1wYW5pYSI6IkEzX0NPTF9ERU1PIiwibmJmIjoxNjQ5Nzc3MTI1LCJleHAiOjE2NDk4NjM1MjUsImlhdCI6MTY0OTc3NzEyNX0.gSNQEBFGgqg_GE2BkeT3K5wwRO8GfAGIVGI_0QaSdTE"
+            }
+        ]
+    }
+]

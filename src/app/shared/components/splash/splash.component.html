@@ -1,0 +1,10 @@
+<ion-content class="splash_background">
+  <div class="splash">
+    <div class="splash-container">
+      <img [attr.src]="aracne_logo" class="splash-logo ">
+      <ion-spinner name="crescent" *ngIf="!isUpgradeAvailable"></ion-spinner>
+      <label class="splash-upgrade" *ngIf="isUpgradeAvailable">Actualice Aracne 3 desde la tienda de aplicaciones para
+        poder continuar.</label>
+    </div>
+  </div>
+</ion-content>

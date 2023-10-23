@@ -1,0 +1,182 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-title>calendario</ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-fab vertical="bottom" horizontal="end" vertical="top" slot="fixed" *ngIf="!isLoadingSlide">
+    <ion-fab-button>
+      <img [attr.src]="calendar_button" (click)="slideChange()">
+    </ion-fab-button>
+  </ion-fab>
+
+  <div class="day-month-slider" *ngIf="!isLoadingSlide">
+    <div style="margin: 1.5rem 0 0; display: flex; flex-direction: row; align-items: center;margin-bottom:1.5rem">
+
+      <!-- Day Route -->
+      <ion-icon name="chevron-back-outline" style="padding-right: 2rem;" (click)="onBackDayChangeDay()"
+        *ngIf="!isMonth"></ion-icon>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;"
+        *ngIf="!isMonth">
+        <ion-label style="font-size: 22px; font-weight: bold; text-align: center;">
+          {{
+          workDayTitle |
+          titlecase}}</ion-label>
+        <ion-label style="font-size: 15px; text-align: center; margin-bottom: 1.5rem">
+          {{
+          workDayMonthTitle |
+          titlecase}}</ion-label>
+      </div>
+      <ion-icon name="chevron-forward-outline" style="padding-left: 2rem;" (click)="onForwardDayChangeDay()"
+        *ngIf="!isMonth"></ion-icon>
+
+      <!-- Month Calendar -->
+      <ion-icon name="chevron-back-outline" style="padding-right: 2rem;" (click)="onBackMonthChangeDay()"
+        *ngIf="isMonth"></ion-icon>
+      <ion-label style="font-size: 22px; font-weight: bold; text-align: center;" *ngIf="isMonth">{{
+        workMonthTitle |
+        titlecase}}</ion-label>
+      <ion-icon name="chevron-forward-outline" style="padding-left: 2rem;" (click)="onForwardMonthChangeDay()"
+        *ngIf="isMonth"></ion-icon>
+
+    </div>
+  </div>
+
+  <ion-slides class="ion-padding" [options]="slideOpts" (ionSlideDidChange)="onviewCalendar()" #slideElement>
+    <!-- Slide For Day Work -->
+    <ion-slide style="flex-direction: column; align-items: center; height: 100%; height: 100%;"
+      [ngStyle]="{'display' : isLoadingSlide ? 'none' : 'flex'}">
+
+      <ion-refresher slot="fixed" [disabled]="isEnabledNotPull" (ionRefresh)="refreshSlideWorkDay($event)">
+        <ion-refresher-content></ion-refresher-content>
+      </ion-refresher>
+
+      <div style="text-align: center;" *ngIf="userReporterConfig">
+        <ion-chip>
+          <ion-avatar>
+            <img [attr.src]="userReporterIcon" />
+          </ion-avatar>
+          <ion-label>{{ userReporterConfig.usuario | titlecase }}</ion-label>
+        </ion-chip>
+      </div>
+
+      <ion-text *ngIf="salespointOfWork.length == 0">
+        <h6>No existen puntos de venta asignados</h6>
+        <img [attr.src]="sad_face">
+      </ion-text>
+
+      <cdk-virtual-scroll-viewport itemSize="10" minBufferPx="300" maxBufferPx="500"
+        [ngStyle]="{'height': salespointOfWork.length > 0 ? (userReporterConfig ? '13.75rem': '16.75rem') : '25.75rem'}">
+        <ion-list style="display: flex; flex-direction: column; align-items: center;" #lista>
+          <ion-item-group class="list-salespoint">
+            <ion-item-sliding *cdkVirtualFor="let item of salespointOfWork">
+              <ion-item style="opacity: unset !important;" (click)="onSelectSalespoint(item)"
+                [disabled]="!userReporterConfig && (item.asistenciaCompleta == 1 || item.idMotivoCancelacion != 0)">
+                <div style="display: flex; flex-direction: column; width: 19rem; padding-left:0.5rem">
+                  <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                    <ion-label style="font-size: 1rem; font-weight: bold;">{{ item.nombrePdv }}
+                    </ion-label>
+                  </div>
+                  <span style="font-size: 0.8rem; margin: 0.5rem 0;">{{ item.direccion }}</span>
+                </div>
+                <div style="margin-left:0rem">
+                  <ion-icon name="chevron-forward-outline" slot="end"
+                    *ngIf="item.asistenciaCompleta != 1 && item.idMotivoCancelacion == 0"></ion-icon>
+                  <img [attr.src]="completed_icon" *ngIf="item.asistenciaCompleta == 1">
+                  <img [attr.src]="workdayCancell_icon" *ngIf="item.idMotivoCancelacion != 0">
+                </div>
+              </ion-item>
+            </ion-item-sliding>
+          </ion-item-group>
+        </ion-list>
+      </cdk-virtual-scroll-viewport>
+      <!--modal para cancelar -->
+
+      <span style="font-size: 0.8rem; margin: 0.5rem 0; font-weight: 200;"
+        *ngIf="salespointOfWork.length > 0 && presentDayValidator == presentRouteDayValidator">¿Quieres
+        añadir más Puntos de Venta?</span>
+      <!-- <ion-buttons slot="center" style="margin: 0.5rem 0;"
+        *ngIf="salespointOfWork.length > 0 && presentDayValidator == presentRouteDayValidator">
+        <ion-button style="background-color: #693B70;" (click)="getSalespointFreeForRoute()" id="open-custom-dialog">
+          <img [attr.src]="button_add">
+        </ion-button>
+      </ion-buttons> -->
+      <ion-buttons slot="center" style="width: 90%;"
+        *ngIf="salespointOfWork.length > 0 && presentDayValidator == presentRouteDayValidator">
+        <ion-button (click)="getSalespointFreeForRoute()" id="open-custom-dialog"
+          style="margin: 0.5rem 0; background: #693B70; width: 100%;border-radius:10px">
+          <!-- <img [attr.src]="button_add"> -->
+          <label style="color: #fff; text-transform: none !important">Añadir PDV</label>
+        </ion-button>
+      </ion-buttons>
+      <ion-card style="height: 250px; width: 90%; border-radius: 16px;"
+        [ngStyle]="{'display' : salespointOfWork.length == 0 ? 'none' : ''}">
+        <ion-card-content style="display: flex; flex-direction: column;" *ngIf="isWithoutMap">
+          <h6 style="text-align: center;">Mapa no disponible. Vuelva a conectarse a internet y refresque esta vista.
+          </h6>
+          <img [attr.src]="sad_face" style="margin-top: 1rem;">
+        </ion-card-content>
+        <div #divCalendarMap id="divCalendarMap"></div>
+      </ion-card>
+      <!-- <div style="width: 100%; margin-left:1rem">
+        <app-map [collections]="salesPointMapList">
+        </app-map>
+      </div> -->
+    </ion-slide>
+
+    <!-- Slide For Calendar Work -->
+    <ion-slide style="flex-direction: column; align-items: center;"
+      [ngStyle]="{'display' : isLoadingSlide ? 'none' : 'flex'}">
+      <ion-calendar type="string" [format]="'DD-MM-YYYY'" [options]="calendarOptions"
+        (change)="onSelectedDayCalendar($event)" (monthChange)="monthChangeEvent($event)">
+      </ion-calendar>
+      <div
+        style="display: flex; flex-direction: row; align-items: flex-start; margin: 1rem; width: 22.5rem; margin-left: 4rem !important; position: absolute; top: 100%;">
+        <ion-label class="work_not_done_legend" style="font-size: 12px; margin-right: 1rem;">No Realizado</ion-label>
+        <ion-label class="work_done_legend" style="font-size: 12px;">Realizado</ion-label>
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-modal [isOpen]="isOpenModalSalespoint" [enterAnimation]="enterAnimation" [leaveAnimation]="leaveAnimation"
+    backdropDismiss="false">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons style="position: fixed; right: 0; top: 0.25rem;">
+            <ion-button style="--color: #844f92 !important;" (click)="isOpenModalSalespoint = false">
+              <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+          <div style="text-align: center;">
+            <ion-title style="font-weight: bold; font-size: 1.2rem;">Puntos de venta, disponibles</ion-title>
+          </div>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content style="display: flex; flex-direction: column; align-items: center;">
+        <ion-list style="display: flex; flex-direction: column; align-items: center;">
+          <ion-item-group class="list-salespoint">
+            <ion-item lines="none" style="margin: 1rem 0 !important;" *ngFor="let item of salespointFree">
+              <ion-checkbox slot="start" mode="ios"
+                style="--size: 1.25rem; margin-inline-end: 1rem; --background-checked: #844f92 !important; --border-color-checked: #844f92 !important;"
+                (ionChange)="onCheckedSalespointFree($event, item.idPdv)">
+              </ion-checkbox>
+              <div style="display: flex; flex-direction: column; justify-content: start;">
+                <ion-label style="font-size: 0.9rem; font-weight: bold;">{{ item.nombrePdv }}
+                </ion-label>
+                <span style="font-size: 0.8rem; margin-top: 0.5rem;">{{ item.direccion }}</span>
+              </div>
+            </ion-item>
+          </ion-item-group>
+        </ion-list>
+        <ion-buttons style="display: flex; flex-direction: column; align-items: center;"
+          *ngIf="salespointFree.length > 0">
+          <ion-button (click)="addSalespointFreeForRoute()">
+            <img [attr.src]="button_add_simple">
+          </ion-button>
+        </ion-buttons>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+</ion-content>

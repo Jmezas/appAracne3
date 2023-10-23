@@ -1,0 +1,46 @@
+<ion-card class="aracne-card">
+  <ion-card-content>
+    <!-- CARD STATUS -->
+    <div class="container-flex ion-justify-content-end ion-margin-bottom">
+        <ion-icon slot="icon-only" [class]="'card-status-'+localData.Status"  name="ellipse" style="font-size: 1rem;"></ion-icon>
+    </div>
+    <div class="container-flex ion-margin-bottom">
+      <!-- IMAGEN A  -->
+      <ng-container *ngIf="localData.Foto; else NotImage">
+        <div class="card-container-image">
+          <img alt="Notification Image" [src]="localData.Foto">
+        </div>
+      </ng-container>
+
+      <!-- IMAGEN B -->
+      <ng-container *ngIf="localData.Foto2; else NotImage">
+        <div class="card-container-image">
+          <img alt="Notification Image" [src]="localData.Foto2">
+        </div>
+      </ng-container>
+
+      <!-- REPLACE NOT IMAGE -->
+      <ng-template #NotImage>
+        <div class="card-container-image container-not-image">
+          <ion-icon class="icon-not-image" name="images-outline"></ion-icon>
+        </div>
+      </ng-template>
+    </div>
+    
+    <!-- Informacion -->
+    <ion-text >
+      <p class="row-information"><span><ion-icon class="icon" name="document"></ion-icon></span> {{localData.TipoFamiliaFoto}}</p>
+      <p class="row-information"><span><ion-icon class="icon" name="grid"></ion-icon></span> {{localData.TipoCategoriaFoto}}</p>
+      <p class="row-information"><span><ion-icon class="icon" name="calendar-sharp"></ion-icon></span> {{localData.FeCreacion}}</p>
+    </ion-text>
+
+    <div class="ion-margin-top">
+      <ion-label><b>Observaciones</b></ion-label>
+      <p>{{localData.Observaciones}}</p>
+    </div>
+
+    <div *ngIf="activeDelete" class="container-flex ion-justify-content-end ion-margin-top">
+      <ion-button size="small" fill="clear" color=" btn-aracne btn-aracne-warning btn-small" (click)="confirmDeleteAlert()">ELIMINAR</ion-button>
+    </div>
+  </ion-card-content>
+</ion-card>

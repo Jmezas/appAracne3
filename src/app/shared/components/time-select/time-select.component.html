@@ -1,0 +1,11 @@
+<ion-item button="true" [id]="id" class="ion-margin-bottom" lines="none">
+  <ion-label  class="aracne-label" position="stacked">{{label}}</ion-label>
+  <ion-input class="aracne-input-clasic" [value]="timeSelected ? timeSelected : ''" readonly></ion-input>
+  <ion-popover [trigger]="id" show-backdrop="false">
+    <ng-template>
+      <ion-datetime hour-cycle="h12" presentation="time" displayFormat="hh-mm-A"
+        (ionChange)="eventSelectItem($event)">
+      </ion-datetime>
+    </ng-template>
+  </ion-popover>
+</ion-item>

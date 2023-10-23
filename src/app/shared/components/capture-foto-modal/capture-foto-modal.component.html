@@ -1,0 +1,20 @@
+
+<ion-content class="ion-padding">
+  <ion-toolbar>
+    <ion-label class="aracne-label" position="stacked">Añadir Foto</ion-label>
+  </ion-toolbar>
+  <div class="ion-text-center take-picture-container" (click)="clickToTakePhoto()">
+    <img *ngIf="imageConvert; else notImageAssigned" [src]="imageConvert" alt="primera imagen">
+  </div>
+  <ion-button (click)="aceptarBtn()" [disabled]="!imageConvert"  fill="clear" class="btn-aracne btn-aracne-dark btn-block" >
+    Aceptar
+  </ion-button>
+  
+  <!-- Imagen: No seleccionado -->
+  <ng-template #notImageAssigned>
+    <div class="not-photo-container">
+      <ion-icon name="images-outline"></ion-icon>
+    </div>
+  </ng-template>
+</ion-content>
+

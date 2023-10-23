@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-title>tarea-config</ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-text style="font-weight: bold; text-align: center; margin: 0 !important;">
+    <h3>Configuraciones</h3>
+  </ion-text>
+  <ion-list>
+    <ion-list-header style="font-size: 1.25rem; font-weight: bold;">
+      <ion-label>Reporte</ion-label>
+    </ion-list-header>
+    <ion-item lines="full">
+      <div style="display: flex; flex-direction: column; margin-bottom: 1rem;">
+        <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between;">
+          <ion-label style="font-weight: bold;">Reportar como otro usuario</ion-label>
+          <ion-toggle mode="md"
+            style="--background-checked: #8fc886 !important; --handle-background-checked: #fff !important; padding-inline: 0.25rem !important;"
+            [formControl]="checkUserReporter" (ionChange)="onChangeUserReport($event)">
+          </ion-toggle>
+        </div>
+        <span style="width: calc(100% - 2.5rem);">Realizar asistencias, tareas y más, como otro usuario de la
+          campaña.</span>
+        <span
+          style="width: calc(100% - 2.5rem); margin-top: 0.25rem; color: #844f92 !important; text-decoration-line: underline;"
+          (click)="openModalUserReporter()" *ngIf="userReporterSelected">
+          {{ userReporterSelected.usuario | titlecase }}</span>
+      </div>
+    </ion-item>
+  </ion-list>
+
+  <ion-modal [isOpen]="isOpenModalUserReporter" [enterAnimation]="enterAnimation" [leaveAnimation]="leaveAnimation"
+    backdropDismiss="false">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons style="position: fixed; right: 0; top: 0.25rem;">
+            <ion-button style="--color: #844f92 !important;" (click)="onCloseModalUserReporter()">
+              <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+          <div style="text-align: center;">
+            <ion-title style="font-weight: bold; font-size: 1.2rem;">Elige un usuario</ion-title>
+          </div>
+        </ion-toolbar>
+        <ion-toolbar>
+          <ion-searchbar mode="ios" [debounce]="500"
+            [ngStyle]="{'padding-bottom' : userReporterSelected != null ? 'unset': ''}" placeholder="Buscar usuario"
+            (ionChange)="onChangeSearchUserReporter($event)"></ion-searchbar>
+        </ion-toolbar>
+        <div style="text-align: center;" *ngIf="userReporterSelected">
+          <ion-chip>
+            <ion-avatar>
+              <img [attr.src]="userReporterIcon" />
+            </ion-avatar>
+            <ion-label>{{ userReporterSelected.usuario | titlecase }}</ion-label>
+            <ion-icon name="close-circle" (click)="onDeleteUserReporter()"></ion-icon>
+          </ion-chip>
+        </div>
+      </ion-header>
+      <ion-content class="ion-padding list-campaign" style="text-align: center;">
+        <ion-list>
+          <ion-item *ngFor="let item of modalUserReporterDataFilter; index as i"
+            (click)="onSelectUserReporter(item.idUsuario)">
+            <div style="display: flex; flex-direction: column;" [ngStyle]="{'margin-top': (i > 0) ? '1rem' : ''}">
+              <ion-label style="font-size: 1.2rem">{{ item.usuario | titlecase }}</ion-label>
+              <ion-label style="font-size: 1rem; color: #c8c8c8 !important;">{{ item.rol | titlecase }}</ion-label>
+            </div>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+</ion-content>

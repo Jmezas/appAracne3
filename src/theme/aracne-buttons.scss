@@ -1,0 +1,50 @@
+.btn-aracne {
+    // width: 100%;
+    height: 36px;
+    font-family: var(--font-primary);
+    border-radius: 30px;
+    font-size: 12px;
+    &-primary {
+        background-color: var(--aracne-green-primary);
+    }
+
+    &-dark {
+        background-color: var(--aracne-dark-primary);
+        color: white !important;
+    }
+    &-warning {
+        background-color: var(--aracne-warning);
+        color: white !important;
+        --color: white;
+    }
+}
+.btn-block {
+    width: 100%;
+}
+
+.btn-small {
+    border-radius: 4px;
+}
+
+ion-alert.alert-aboradaje {
+    .alert-button {
+        height: 36px;
+        font-family: var(--font-primary);
+        border-radius: 30px;
+        font-size: 12px;
+        background-color: var(--aracne-dark-primary);
+        color: white !important;
+    }
+    .btn-aceptar-abordaje, .btn-item-reporte {
+        display: flex;
+        color: white;
+        span{
+            justify-content: center;
+        }
+        &:disabled {
+            opacity: 0.5;
+        }
+    }
+}
+
+

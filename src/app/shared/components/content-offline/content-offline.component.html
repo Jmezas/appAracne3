@@ -1,0 +1,21 @@
+
+  <ion-tabs class="aracne-tabs">
+    <ion-tab-bar slot="top">
+        <ion-tab-button>
+            <ion-label>{{'Pendiente' | uppercase}}</ion-label>
+            <!-- <ion-icon name="people"></ion-icon> -->
+        </ion-tab-button>
+        <ion-tab-button>
+            <ion-label>{{'Error'| uppercase}}</ion-label>
+            <!-- <ion-icon name="people"></ion-icon> -->
+        </ion-tab-button>
+    </ion-tab-bar>
+    <ion-content>
+      probado
+    </ion-content>
+  </ion-tabs>
+
+
+<ng-template #NotContentOffline>
+  <app-view-message [message]="'No hay items que mostrar'"></app-view-message>
+</ng-template>

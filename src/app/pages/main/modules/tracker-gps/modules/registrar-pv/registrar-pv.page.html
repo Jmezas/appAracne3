@@ -1,0 +1,30 @@
+<app-header-modules [moduleTitle]="'TrackerGPS'" [btnBack]="true" [buttonsHeader]="IconsHeaderMain">
+</app-header-modules>
+
+<ion-content class="ion-padding">
+  <form [formGroup]="registerPVForm" (ngSubmit)="submitRegisterForm()">
+    <ion-text color="primary">
+      <h3 class="ion-text-center">Registrar PV</h3>
+    </ion-text>
+    <ion-item class="ion-margin-bottom">
+      <ion-label position="stacked">Razón Social:</ion-label>
+      <ion-input required formControlName="razonSocial" type="text" placeholder="Click para añadir datos"></ion-input>
+    </ion-item>
+    <ion-item class="ion-margin-bottom">
+      <ion-label position="stacked">Dirección:</ion-label>
+      <ion-input required formControlName="direccion" type="text" placeholder="Click para añadir datos"></ion-input>
+    </ion-item>
+    
+  </form>
+</ion-content>
+<ion-button block color="primary" type="submit" expand="full" [disabled]="registerPVForm.invalid">
+  REGISTRAR PV
+</ion-button>
+
+
+
+<ng-template #IconsHeaderMain>
+  <ion-buttons slot="end">
+    <app-tracker-status></app-tracker-status>
+  </ion-buttons>
+</ng-template>
